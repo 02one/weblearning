@@ -1,0 +1,1430 @@
+
+body {
+    background: #f5f5f5;
+}
+/*=======================头部======================*/
+
+/*头部样式设置*/
+.navbar-default {
+    height: 60px;
+    border-bottom: 1px solid #ececec;
+    background: #fff;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+/*    min-width: 1000px;*/
+}
+.mycontainer{
+	margin:0 auto;
+}
+.background-line{
+	width: 1000px;
+	margin: 0 auto;
+}
+/*头部图标设置*/
+.jkxy-logo {
+    width: 109px;
+    height: 40px;
+    box-sizing: border-box;
+    vertical-align: center;
+    margin-top: 10px;
+}
+/*头部文字块*/
+.nav-firstpage {
+    display: inline-block;
+    position: absolute;
+    box-sizing: border-box;
+    margin-top: 20px;
+    min-width: 459px;
+}
+.nav-firstpage ul{
+    list-style: none;
+    padding: 0;
+}
+.nav-firstpage ul li {
+    position: relative;
+    margin-left: 50px;
+    display: inline-block;
+    box-sizing: border-box;
+
+}
+/*头部文字触发器*/
+
+/*头部文字样式*/
+.nav-firstpage ul li a{
+	color: #333;
+	text-decoration: none;
+	cursor: pointer;
+}
+/*小箭头样式*/
+.arrow-icon {
+    width: 8px;
+    height: 8px;
+    margin-left: 5px;
+    border-top: 1px solid #c1c1c1;
+    border-left: 1px solid #c1c1c1;
+    display: inline-block;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    transform-origin: 4px 4px;
+    -webkit-transition: transform .5s linear;
+    -moz-transition: transform .5s linear;
+    -o-transition: transform .5s linear;
+    transition: transform .5s linear;
+}
+/*“首页”触发器*/
+.nav-firstpage .navb li:first-child .fp {
+    color: rgb(53, 181, 88);
+    text-decoration: none;
+}
+.nav-firstpage .navb li:first-child .fp:hover {
+    color: rgb(53, 181, 88);
+    text-decoration: none;
+}
+/*箭头旋转触发器*/
+.nav-firstpage ul .dropdown:hover .arrow-icon{
+	transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform-origin: 4px 4px;
+    border-top: 1px solid rgb(53, 181, 88);
+    border-left: 1px solid rgb(53, 181, 88);
+}
+/*"职业学院"、“会员课程”、“极客社区”字体颜色触发器*/
+.nav-firstpage ul .dropdown:hover .dropdown-menu{
+	display: block;
+	cursor: pointer;
+}
+.nav-firstpage ul .dropdown a:hover {
+	color: rgb(53, 181, 88);
+}
+
+/*"职业学院"、“会员课程”、“极客社区”下拉菜单样式*/
+.nav-firstpage .dropdown-menu{
+	text-align: left;
+	padding: 0;
+	margin: 0;
+	min-width: 300px;
+}
+.nav-firstpage .dropdown-menu li{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+
+}
+.nav-firstpage .dropdown-menu li a{
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: nowrap;
+}
+.nav-firstpage .dropdown-menu li h6{
+	margin: 10px 0 0;
+    padding: 0 15px;
+    background: #fafafa;
+    height: 28px;
+    line-height: 28px;
+    font-weight: 300;
+}
+/*下拉菜单项图标*/
+.dropdown-menu .web-icon{
+	background: url(images/allicon.png) 0 0 no-repeat;
+    background-size: 64px 64px;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    margin-right: 10px!important;
+    background-position: -15px -27px;
+}
+.dropdown-menu .wechat-icon{
+	background: url(images/allicon4.png) 0 0 no-repeat;
+    background-size: 64px 64px;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    margin-right: 10px!important;
+    background-position: -2px -16px;
+}
+.dropdown-menu .zyljt-icon{
+	background: url(images/allicon.png) 0 0 no-repeat;
+    background-size: 64px 64px;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    margin-right: 10px!important;
+    background-position: -45px 0;
+}
+.dropdown-menu a span{
+	color: #bbb;
+	float: right;
+}    
+
+/*头部图标盒子*/
+.icon-box {
+    float: right;
+    text-align: right;
+    min-width: 200px;
+    margin-right: 10px;
+    height: 60px;
+}
+/*头部图标样式*/
+.icon-box span {
+    height: 60px;
+    width: 17px;
+    display: inline-block;
+    margin-left: 25px;
+    cursor: pointer;
+    position: relative;
+}
+.icon-box .search-icon {
+    background: url(images/search-icon.png) 0 0 no-repeat;
+    background-size: 17px 17px;
+    background-position: 0, 0;
+}
+.icon-box .app-icon {
+    background: url(images/app-icon.png) 0 0 no-repeat;
+    background-size: 17px 17px;
+    background-position: 0, 0;
+}
+.icon-box .login-icon {
+    background: url(images/login-icon.png) 0 0 no-repeat;
+    background-size: 17px 17px;
+    background-position: 0, 0;
+}
+/*头部图标触发器*/
+.icon-box .app-icon:hover .dropdown-menu{
+	display: block;
+	background: #f5f5f5;
+	border: none;
+	box-shadow: none;
+}
+.icon-box .app-icon ul li img{
+	display: block;
+	width: 120px;
+    margin-left: -36px;
+    margin-top: -10px;
+}
+.icon-box .login-icon .dropdown-menu{
+	margin-left: -50px;
+	min-width: 120px;
+	margin-top: -3px;
+}
+.icon-box .login-icon ul li{
+    text-align: left;
+    font-size: 12px;
+    line-height: 35px;
+    vertical-align: middle;
+}
+.icon-box .login-icon ul li a{
+	font-size: 12px;
+		padding: 0;
+	margin: 0;
+	line-height: 35px;
+	vertical-align: middle;
+}
+.icon-box .login-icon:hover .dropdown-menu{
+	display: block;
+}
+.icon-box .login-icon ul .reg_lg{
+	width: 45%;
+	height: 35px;
+    line-height: 35px;
+    padding: 0 10px;
+    display: inline-block;
+    text-align: center;
+}
+.icon-box .login-icon ul li i{
+	background: url(images/allicon2.png) 0 0 no-repeat;
+    background-size: 64px 64px;
+    width: 12px;
+    height: 12px;
+    margin-right: 10px;
+    display: inline-block;
+   	padding: 0;
+	margin-left: 7px;
+	vertical-align: middle;
+}
+.icon-box .login-icon ul .study{
+	background-position: -16px -15px;
+}
+.icon-box .login-icon ul .page{
+	background-position: -45px -1px;
+}
+.icon-box .login-icon ul .message{
+	background-position: -16px -30px;
+}
+.icon-box .login-icon ul .setting{
+	background-position: -30px -1px;
+}
+/*===============正文主体部分===========*/
+/*各个块样式*/
+.artical section {
+    width: 1000px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    margin-left: 0;
+}
+.artical .jk-nav {
+    clear: both;
+    height: 350px;
+    padding-top: 20px;
+}
+.artical .jiuye {
+    height: 140px;
+    position: relative;
+}
+.artical .jk-sku {
+    height: 270px;
+}
+.artical .jk-excellence {
+    margin: 0 0 40px;
+    height: 320px;
+}
+.artical .jk-devil {
+    margin: 0 0 40px;
+    box-sizing: border-box;
+    position: relative;
+    height: 310px;
+}
+.artical .jk-college {
+    margin-left: 0;
+    height: 310px;
+}
+.artical .jk-vip{
+	height: 430px;
+}
+.artical .jk-story {
+    height: 300px;
+    position: relative;
+}
+.artical .jk-partner {
+    height: 240px;
+}
+/*副标题字体大小*/
+h2 {
+    font-size: 18px;
+    color: #555;
+    line-height: 18px;
+    height: 18px;
+    margin-bottom: 22px;
+}
+
+
+/*=======================上半部分(无副标题区域)===============*/
+
+/*滚动图片区域样式*/
+.jk-banner {
+    /*	background-color: red;*/
+    height: 330px;
+    width: 750px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+.img-list li {
+    list-style: none;
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+/*图片滚动效果*/
+.img-list {
+    -moz-animation: slide 20s infinite;
+    -webkit-animation: slide 20s infinite;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+/*    height: 0px;
+    width: 0px;*/
+}
+@-moz-keyframes slide {
+    from,
+    to {
+        left: 0;
+    }
+    0% {
+        left: 0;
+    }
+    10% {
+        left: 0;
+    }
+    20% {
+        left: -750px;
+    }
+    30% {
+        left: -750px;
+    }
+    40% {
+        left: -1500px;
+    }
+    50% {
+        left: -1500px;
+    }
+    60% {
+        left: -2250px;
+    }
+    70% {
+        left: -2250px;
+    }
+    80% {
+        left: -3000px;
+    }
+    90% {
+        left: -3000px;
+    }
+    100% {
+        left: -3750px;
+    }
+}
+
+@-webkit-keyframes slide {
+    from,
+    to {
+        left: 0;
+    }
+    0% {
+        left: 0;
+    }
+    10% {
+        left: 0;
+    }
+    20% {
+        left: -750px;
+    }
+    30% {
+        left: -750px;
+    }
+    40% {
+        left: -1500px;
+    }
+    50% {
+        left: -1500px;
+    }
+    60% {
+        left: -2250px;
+    }
+    70% {
+        left: -2250px;
+    }
+    80% {
+        left: -3000px;
+    }
+    90% {
+        left: -3000px;
+    }
+    100% {
+        left: -3750px;
+    }
+}
+/*左箭头*/
+.banner-left {
+    display: none;
+    width: 50px;
+    height: 80px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -40px;
+    z-index: 2;
+    cursor: pointer;
+    background: url(images/arrow_left.png) no-repeat center;
+    background-size: 50px 80px;
+}
+/*右箭头*/
+.banner-right {
+    display: none;
+    width: 50px;
+    height: 80px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -40px;
+    z-index: 2;
+    cursor: pointer;
+    background: url(images/arrow_left.png) no-repeat center;
+    background-size: 50px 80px;
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+}
+/*箭头触发器*/
+.jk-nav .jk-banner:hover .banner-left,
+.jk-nav .jk-banner:hover .banner-right{
+	display: block;
+}
+/*边栏样式*/
+.jk-side {
+	height: 330px;
+	width: 240px;
+	display: inline-block;
+	position: relative;
+	padding-left: 5px;
+	float: right;
+}
+/*登入框*/
+.jk-login {
+    height: 155px;
+    box-sizing: border-box;
+    width: 240px;
+    background: #fff;
+    margin-bottom: 15px;
+}
+/*用户图像样式*/
+.jk-login .userinfo-img {
+    float: left;
+    width: 57px;
+    height: 57px;
+    border-radius: 50%;
+    margin-right: 15px;
+    vertical-align: middle;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+/*登入框文字样式*/
+.jk-login .username {
+    float: left;
+    font-size: 12px;
+    color: #555;
+    line-height: 16px;
+    height: 16px;
+    width: 108px;
+    margin-top: 40px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.jk-login .userstatus {
+    float: left;
+    font-size: 12px;
+    color: #555;
+    line-height: 16px;
+    height: 16px;
+    width: 108px;
+    margin-top: 10px;
+}
+/*按钮字体样式*/
+.jk-login .btn-font {
+    color: #008000;
+    border-color: #008000;
+    position: relative;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: -8px;
+    font-size: 13px;
+    width: 88px;
+    height: 36px;
+}
+/*登入框按钮触发器*/
+.jk-login .btn-design{
+	border: 1px solid #008000;
+	border-radius: 0px;
+	background: #fff;
+}
+.jk-login .btn-design:hover{
+	background: #008000;
+	color: #fff;
+}
+/*活动框样式*/
+.jk-activity {
+    background: #fff;
+    height: 160px;
+    width: 240px;    
+    box-sizing: border-box;
+    position: relative;
+}
+.jk-activity img{
+	position: relative;
+}
+/*----------------就业班框---------------------------*/
+/*表格样式*/
+.table>tbody>tr>td,
+.table>tbody>tr>th,
+.table>tfoot>tr>td,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>thead>tr>th {
+    padding: 0px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 0px solid #ddd;
+}
+/*图片样式*/
+.jiuye img {
+    width: 55px;
+    height: 55px;
+    vertical-align: middle;
+}
+.jiuye .bg-php {
+    background-image: url(images/jiuye1.jpg);
+    background-size: 327px 70px;
+}
+.jiuye .bg-web {
+    background: url(https://s1.jikexueyuan.com/index/images/jiuye-ban02_0aec839.jpg) no-repeat center center;
+    background-size: 327px 70px;
+}
+
+.jiuye .bg-ui {
+    background: url(https://s1.jikexueyuan.com/index/images/jiuye-ban03_47f0666.jpg) no-repeat center center;
+    background-size: 327px 70px;
+}
+
+.jiuye .bg-android {
+    background: url(https://s1.jikexueyuan.com/index/images/jiuye-ban04_b84d257.jpg) no-repeat center center;
+    background-size: 327px 70px;
+}
+
+.jiuye .bg-ios {
+    background: url(https://s1.jikexueyuan.com/index/images/jiuye-ban05_9f8330c.jpg) no-repeat center center;
+    background-size: 327px 70px;
+}
+
+.jiuye .bg-java {
+    background: url(https://s1.jikexueyuan.com/index/images/jiuye-ban06_2402215.jpg) no-repeat center center;
+    background-size: 327px 70px;
+}
+/*文字样式*/
+.jiuye p {
+    margin: 0 42px 10px;
+    position: absolute;
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+}
+/*阴影触发器*/
+.jiuye .table td a:hover{
+	-moz-box-shadow: 10px 0px 5px #888888; 
+	box-shadow: 10px 0px 5px #888888;
+}
+/*阴影延时触发器*/
+.jk-ban {
+    float: left;
+    width: 329px;
+    height: 70px;
+    background: #fff;
+    margin-right: 9px;
+    margin-bottom: 10px;
+    padding-left: 33px;
+    line-height: 68px;
+    -webkit-transition: box-shadow .2s linear;
+    -moz-transition: box-shadow .2s linear;
+    -o-transition: box-shadow .2s linear;
+    transition: box-shadow .2s linear;
+}
+
+
+/*----------------优惠课-------------*/
+.skuContainer {
+    box-sizing: border-box;
+    position: relative;
+    height: 113px;
+    background: #fff;
+    color: #000;
+}
+.jk-sku ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.jk-sku ul li {
+    display: list-item;
+    list-style: none;
+    float: left;
+    width: 235px;
+    height: 100%;
+    margin-right: 20px;
+    border: 1px solid #e9e9e9;
+    transition: box-shadow .5s;
+    -moz-transition: box-shadow .5s;
+    -webkit-transition: box-shadow .5s;
+    -o-transition: box-shadow .5s;
+}
+.jk-sku ul li:hover{
+	box-shadow: 0px 0px 3px #333;
+}
+.jk-sku ul li:last-child {
+    margin-right: 0;
+    padding-left: 6px;
+}
+
+.jk-sku ul li img {
+    height: 155px;
+    vertical-align: middle;
+}
+
+.jk-sku ul li a {
+    text-decoration: none;
+}
+
+.skuTitle {
+    width: 100%;
+    overflow: hidden;
+    font-size: 12px;
+    color: #555;
+    line-height: 18px;
+    height: 36px;
+    box-sizing: border-box;
+    position: relative;
+    margin-left: 10px;
+}
+
+.skuInfo {
+    margin-top: 6px;
+    color: #999;
+    font-size: 12px;
+    line-height: 16px;
+    height: 16px;
+}
+
+.skuPrice {
+    float: left;
+    font-size: 18px;
+    color: #ff5c00;
+    vertical-align: bottom;
+    margin-right: 5px;
+    margin-top: 8px;
+}
+
+.skuThrought {
+    float: left;
+    font-size: 12px;
+    color: #999;
+    margin-top: 14px;
+    text-decoration: line-through;
+    vertical-align: bottom;
+}
+
+.skuNum {
+    display: inline-block;
+    height: 14px;
+    position: absolute;
+    bottom: 14px;
+    right: 14px;
+    color: #999;
+    font-size: 12px;
+}
+
+
+/*=================大牛程序员===================*/
+
+.jk-excellence {
+    margin: 0 auto 40px;
+    height: 320px;
+}
+
+.jk-excellence ul {
+    margin: 0;
+    padding: 0;
+}
+
+.jk-excellence ul li {
+    list-style: none;
+    position: relative;
+    float: left;
+    margin-right: 10px;
+    padding-top: 50px;
+}
+
+.jk-excellence ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.jk-excellence ul li span {
+    display: block;
+    font-size: 13px;
+    text-align: center;
+    margin-top: 8px;
+}
+/*鼠标经过触发器*/
+.jk-excellence ul li i:hover{
+	opacity: 0.5;
+}
+/*颜色渐变触发器*/
+.jk-excellence ul li i {
+    display: inline-block;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0;
+    transition: opacity .8s;
+    -moz-transition: opacity .8s;
+    -webkit-transition: opacity .8s;
+    -o-transition: opacity .8s;
+}
+
+.jk-excellence ul li:first-child,
+.jk-excellence ul li:nth-child(3),
+.jk-excellence ul li:nth-child(5),
+.jk-excellence ul li:nth-child(6) {
+    width: 345px;
+    height: 135px;
+}
+
+.jk-excellence li:nth-child(2),
+.jk-excellence li:nth-child(4),
+.jk-excellence li:nth-child(7),
+.jk-excellence li:nth-child(8) {
+    width: 140px;
+    height: 135px;
+}
+
+.jk-excellence ul li:first-child {
+    padding-top: 55px;
+    background: url(https://s1.jikexueyuan.com/index/images/daniu_01_04a8f60.jpg) center center no-repeat;
+    background-size: 100% 100%;
+}
+
+.jk-excellence ul li:nth-child(2) {
+    background: url(https://s1.jikexueyuan.com/index/images/daniu_02_32a4b8f.jpg) center center no-repeat;
+    background-size: 100% 100%;
+}
+
+.jk-excellence ul li:nth-child(3) {
+    background: url(https://s1.jikexueyuan.com/index/images/daniu_03_ab4fc6e.jpg) center center no-repeat;
+    background-size: 100% 100%;
+}
+
+.jk-excellence ul li:nth-child(4) {
+    background: url(https://s1.jikexueyuan.com/index/images/daniu_04_0b4155e.jpg) center center no-repeat;
+    background-size: 100% 100%;
+    margin-right: 0;
+}
+
+.jk-excellence ul li:nth-child(5) {
+    background: url(https://s1.jikexueyuan.com/index/images/daniu_05_0b52a98.jpg) center center no-repeat;
+    background-size: 100% 100%;
+}
+
+.jk-excellence ul li:nth-child(6) {
+    background: url(https://s1.jikexueyuan.com/index/images/daniu_06_76b8ecc.jpg) center center no-repeat;
+    background-size: 100% 100%;
+}
+
+.jk-excellence ul li:nth-child(7) {
+    background: url(https://s1.jikexueyuan.com/index/images/daniu_07_5229e37.jpg) center center no-repeat;
+    background-size: 100% 100%;
+}
+
+.jk-excellence ul li:nth-child(8) {
+    /*	padding-top: 35px;
+    line-height: 22px;*/
+    background: url(https://s1.jikexueyuan.com/index/images/daniu_08_31f0321.jpg) center center no-repeat;
+    background-size: 100% 100%;
+    margin-right: 0;
+}
+
+.jk-excellence ul li:nth-child(n+5) {
+    margin-top: 10px;
+}
+
+
+/*==============魔鬼程序员=================*/
+/*框架样式*/
+.jk-devil {
+    width: 1000px;
+    margin: 0 auto 40px;
+    box-sizing: border-box;
+    position: relative;
+    height: 310px;
+}
+.jk-devil ul {
+    margin: 0;
+    padding: 0;
+}
+/*四组图片及框架*/
+.jk-devil .devil1 div {
+    background: #df5a49;
+    width: 620px;
+    box-sizing: border-box;
+}
+
+.jk-devil .devil1 img {
+    position: relative;
+    margin-top: -70px;
+}
+
+.jk-devil .devil2 div {
+    background: #efc94c;
+    width: 380px;
+    box-sizing: border-box;
+}
+
+.jk-devil .devil2 img {
+    position: relative;
+    margin-top: -70px;
+}
+
+.jk-devil .devil3 div {
+    background: #e27a3f;
+    width: 620px;
+    box-sizing: border-box;
+}
+
+.jk-devil .devil3 img {
+    position: relative;
+    margin-left: -275px;
+}
+
+.jk-devil .devil4 div {
+    background: #45b29d;
+    width: 380px;
+    box-sizing: border-box;
+}
+
+.jk-devil .devil4 img {
+    position: relative;
+    margin-left: -205px;
+}
+/*鼠标经过触发器*/
+.jk-devil ul li:hover{
+	opacity: 0.7;
+}
+/*颜色渐变触发器*/
+.jk-devil ul li {
+    list-style: none;
+    position: relative;
+    float: left;
+    opacity: 1;
+    transition: opacity .5s;
+    -moz-transition: opacity .5s;
+    -webkit-transition: opacity .5s;
+    -o-transition: opacity .5s;
+}
+
+.jk-devil ul li img {
+    position: relative;
+    float: left;
+}
+
+.jk-devil ul li div {
+    float: left;
+    padding-top: 70px;
+    color: #fff;
+    height: 135px;
+}
+
+
+/*===================职业学院====================*/
+/*框架样式*/
+.jk-college {
+    margin-left: 0;
+    width: 1000px;
+    height: 310px;
+}
+.jk-college ul {
+    list-style: none;
+    padding: 0;
+}
+.jk-college ul li {
+    float: left;
+    width: 240px;
+    height: 130px;
+    margin-left: 10px;
+    position: relative;
+    background: #ccc;
+    margin-bottom: 10px;
+}
+.jk-college ul li img {
+    width: 240px;
+    height: 130px;
+    display: inline-block;
+}
+/*颜色渐变触发器*/
+.jk-college ul li i:hover{
+	opacity: 0.6;
+}
+.jk-college ul li i{
+	display: inline-block;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0;
+    transition: opacity .8s;
+    -moz-transition: opacity .8s;
+    -webkit-transition: opacity .8s;
+    -o-transition: opacity .8s;
+}
+
+.jk-college .web {
+    width: 500px;
+    height: 270px;
+    margin-left: 0;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.jk-college .web img {
+    width: 500px;
+    height: 270px;
+}
+
+.jk-college span {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    padding-top: 88px;
+}
+
+.jk-college .web span {
+    padding-top: 180px;
+    font-size: 20px;
+    background: url(https://s1.jikexueyuan.com/index/images/cweb_2d70d0b.png) no-repeat center 70px;
+    background-size: 55px 84px;
+}
+
+.jk-college .python span {
+    background: url(https://s1.jikexueyuan.com/index/images/cpython_5ed9df4.png) no-repeat center 31px;
+    background-size: 36px 36px;
+}
+
+.jk-college .go span {
+    background: url(https://s1.jikexueyuan.com/index/images/cgo_e66208d.png) no-repeat center 33px;
+    background-size: 36px 29px;
+}
+
+.jk-college .ios span {
+    background: url(https://s1.jikexueyuan.com/index/images/cios_dc0ca8e.png) no-repeat center 36px;
+    background-size: 32px 36px;
+}
+
+.jk-college .wx span {
+    background: url(https://s1.jikexueyuan.com/index/images/cwechat_624099d.png) no-repeat center 40px;
+    background-size: 40px 33px;
+}
+
+
+/*============会员课程====================*/
+/*框架样式*/
+.jk-vip ul {
+    list-style: none;
+    padding: 0;
+    width: 1000px;
+    height: 310px;
+}
+.jk-vip ul li {
+    float: left;
+    width: 158px;
+    height: 150px;
+    border: 1px solid #e9e9e9;
+    background: #fff;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: box-shadow .5s;
+    -moz-transition: box-shadow .5s;
+    -webkit-transition: box-shadow .5s;
+    -o-transition: box-shadow .5s;
+}
+.jk-vip ul li a {
+    text-align: center;
+}
+.jk-vip ul li img {
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    margin-top: 25px;
+    vertical-align: middle;
+    margin-left: 52px;
+}
+.jk-vip ul li:nth-child(n+7) {
+    margin-top: 10px;
+}
+.jk-vip ul li:nth-child(6),
+.jk-vip ul li:nth-child(12) {
+    margin-right: 0px;
+}
+.jk-vip ul li span {
+    display: block;
+    font-size: 12px;
+    color: #35b558;
+    height: 22px;
+    line-height: 22px;
+}
+.jk-vip a{
+	text-decoration: none;
+	color:#555;
+}
+.jk-vip .vipall {
+    display: inline-block;
+    margin-top: 38px;
+    height: 32px;
+    line-height: 30px;
+    border: 1px solid #35b558;
+    border-radius: 2px;
+    width: 120px;
+    font-size: 14px;
+    color: #35b558;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    margin-left: -60px;
+    transition: background .8s;
+    -moz-transition: background .8s;
+    -webkit-transition: background .8s;
+    -o-transition: background .8s;
+}
+/*阴影触发器*/
+.jk-vip ul li:hover{
+	-moz-box-shadow: 0px 0px 2px #888888; /* 老的 Firefox */
+	box-shadow: 0px 0px 2px #888888;
+}
+/*按键触发器*/
+.jk-vip .vipall:hover{
+	background: #008000;
+	color: #fff;
+}
+/*======================学员故事====================*/
+/*框架样式*/
+.jk-story {
+    width: 1000px;
+    height: 300px;
+    position: relative;
+}
+
+.jk-story .story-container {
+    width: 100%;
+    height: 260px;
+    position: relative;
+    overflow: hidden;
+}
+.jk-story .swiper-wrapper{
+	width: 4000px;
+	height: 260px;
+	transition-duration: 1s;
+}
+.jk-story .swiper-slide{
+	position: relative;
+	text-align: center;
+	float: left;
+	background: #f5f5f5!important;
+	width: 1000px;
+	height: 260px;
+}
+.jk-story ul{
+	height: 260px;
+	width: 100%;
+	list-style: none;
+	margin:0;
+	padding: 0;
+}
+.jk-story ul li{
+	float: left;
+    width: 320px;
+    height: 200px;
+    position: relative;
+    margin-right: 20px;
+    transition: box-shadow .5s;
+    -moz-transition: box-shadow .5s;
+    -webkit-transition: box-shadow .5s;
+    -o-transition: box-shadow .5s;
+}
+.jk-story ul li img{
+	position: absolute;
+    top: 80px;
+    left: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #e9e9e9;
+}
+
+.jk-story ul li a{
+	text-decoration: none;
+	font-size: 13px;
+}
+.jk-story ul li:nth-child(3){
+	margin-right: 0;
+}
+.jk-story .story-content{
+	background: #fff;
+	color: #555;
+}
+/*==========================合作企业======================*/
+
+.jk-partner {
+    height: 240px;
+    width: 1000px;
+}
+
+.jk-partner ul {
+    padding: 0;
+    list-style: none;
+    height: 120px;
+}
+
+.jk-partner ul li {
+    float: left;
+    width: 150px;
+    height: 50px;
+    border: 1px solid #e9e9e9;
+    background: #fff;
+    margin-right: 20px;
+    transition: box-shadow .5s;
+    -moz-transition: box-shadow .5s;
+    -webkit-transition: box-shadow .5s;
+    -o-transition: box-shadow .5s;
+    cursor: pointer;
+}
+
+.jk-partner ul li:nth-child(6),
+.jk-partner ul li:nth-child(12) {
+    margin-right: 0px;
+}
+
+.jk-partner ul li:nth-child(n+7) {
+    margin-top: 20px;
+}
+
+.jk-partner .more-partner {
+    display: inline-block;
+    margin-top: 38px;
+    height: 32px;
+    line-height: 30px;
+    border: 1px solid #35b558;
+    border-radius: 2px;
+    width: 120px;
+    font-size: 14px;
+    color: #35b558;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    margin-left: -60px;
+    transition: background .8s;
+    -moz-transition: background .8s;
+    -webkit-transition: background .8s;
+    -o-transition: background .8s;
+}
+
+.jk-partner ul li:nth-child(1) {
+    background: url(https://s1.jikexueyuan.com/index/images/p_microsoft_82f9a9a.png) no-repeat center;
+}
+
+.jk-partner ul li:nth-child(2) {
+    background: url(https://s1.jikexueyuan.com/index/images/p_tencent_47175aa.png) no-repeat center;
+}
+
+.jk-partner ul li:nth-child(3) {
+    background: url(https://s1.jikexueyuan.com/index/images/p_qcloud_ab76cc7.png) no-repeat center;
+}
+
+.jk-partner ul li:nth-child(4) {
+    background: url(https://s1.jikexueyuan.com/index/images/p_qualcomm_362a472.png) no-repeat center;
+}
+
+.jk-partner ul li:nth-child(5) {
+    background: url(https://s1.jikexueyuan.com/index/images/p_cocos_2a0a8f3.png) no-repeat center;
+}
+
+.jk-partner ul li:nth-child(6) {
+    background: url(https://s1.jikexueyuan.com/index/images/p_amd_f9f0c7f.png) no-repeat center;
+}
+
+.jk-partner ul li:nth-child(7) {
+    background: url(https://s1.jikexueyuan.com/index/images/p_xunfei_d1cd670.png) no-repeat center;
+}
+
+.jk-partner ul li:nth-child(8) {
+    background: url(https://s1.jikexueyuan.com/index/images/p_tuling_3ec6ea2.png) no-repeat center;
+}
+
+.jk-partner ul li:nth-child(9) {
+    background: url(https://s1.jikexueyuan.com/index/images/p_tingyun_c2752df.png) no-repeat center;
+}
+
+.jk-partner ul li:nth-child(10) {
+    background: url(https://s1.jikexueyuan.com/index/images/p_juhe_25bbedf.png) no-repeat center;
+}
+
+.jk-partner ul li:nth-child(11) {
+    background: url(https://s1.jikexueyuan.com/index/images/p_bootstrap_d0a74f3.png) no-repeat center;
+}
+
+.jk-partner ul li:nth-child(12) {
+    background: url(https://s1.jikexueyuan.com/index/images/p_cloudstack_6ecabb3.png) no-repeat center;
+}
+/*====================底部====================*/
+footer{
+	width: 100%;
+	height: 300px;
+	background:#fff;
+}
+.jk-info{
+	position: relative;
+    margin-top: 50px;
+}
+.jk-logo{
+	position: absolute;
+    left: 20px;
+    top: 25px;
+    display: inline-block;
+    width: 160px;
+}
+.jk-logo img{
+	width: 109px;
+    height: 40px;
+    display: block;
+}
+.jk-logo p{
+	font-size: 12px;
+    color: #999;
+    margin-top: 20px;
+}
+
+.jk-information{
+	position: relative;
+    width: 1000px;
+    height: 215px;
+    margin: 0 auto;
+    border-bottom: 1px solid #f5f5f5;
+    padding-left: 224px;
+    padding-top: 25px;
+    box-sizing: border-box;
+}
+.jk-information dl{
+	width: 135px;
+    color: #808080;
+    float: left;
+}
+.jk-information dt{
+	font-size: 14px;
+    line-height: 30px;
+    color: #808080;
+}
+.jk-information dl dd{
+	font-size: 12px;
+    line-height: 30px;
+}
+.jk-information dl dd a{
+	color: #808080;
+	text-decoration: none;
+}
+
+.services{
+	position: absolute;
+    right: 0;
+    top: 25px;
+    display: inline-block;
+    width: 175px;
+    text-align: left;
+}
+.hot-tel{
+	color: #808080;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.services .down-ios{
+	background: url(images/icon-down-ios.png)no-repeat 0 0;
+    background-size: 30px 30px;
+}
+.services .down-android{
+	background: url(images/icon-down-and.png)no-repeat 0 0;
+    background-size: 30px 30px;
+}
+.services img{
+	display: inline-block;
+    width: 115px;
+    height: 153px;
+    position: absolute;
+    top: -157px;
+    left: 12px;
+    z-index: 2;
+    display: none;
+}
+.down-con{
+	position: relative;
+    display: inline-block;
+    width: 140px;
+    height: 30px;
+    border: 1px solid #eeeeee;
+    margin-bottom: 10px;
+    line-height: 30px;
+    color: #808080;
+    font-size: 13px;
+    padding-left: 40px;
+    cursor: pointer;
+}
+
+.jk-copyright{
+	font-size: 12px;
+    color: #999;
+    margin: 0 auto;
+    width: 1000px;
+    text-align: center;
+    padding: 15px 0;
+}
+.jk-copyright .down-wechat{
+	float: right;
+    height: 15px;
+    width: 20px;
+    background: url(images/icon-down-wechat.png)no-repeat 0 0;
+    background-size: 18px 15px;
+}
+.jk-copyright .down-sina{
+    float: right;
+    height: 15px;
+    width: 20px;
+    margin-right: 10px;
+    background: url(images/icon-down-sina.png)no-repeat 0 0;
+    background-size: 20px 15px;
+}
+
+/*=================返回顶部==================*/
+.backtop{
+	width: 510px;
+	position: fixed;
+	left: 50%;
+	margin-left: 510px;
+	width: 34px;
+	text-align: center;
+	z-index: 2000;
+	bottom: 50px;
+}
+.backtop .top{
+	display: none;
+	width: 42px;
+	height: 42px;
+	background-size: 42px 42px;
+    background: url(images/backtop.png) 0 0 no-repeat;
+}
+.backtop .erwma{
+	position: relative;
+	display: none;
+	background: url(images/gotop.jpg) 0 -34px no-repeat;
+    background-size: 34px 103px;
+    width: 34px;
+    height: 35px;
+}
+
+@media screen and(max-width: 992px) {
+	.jk-nav .jk-side .jk-login,
+	.jk-nav .jk-side .jk-activity {
+		display: none;
+	}
+}

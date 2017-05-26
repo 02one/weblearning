@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>wings</title>
+    <link rel="stylesheet" type="text/css" href="wings.css">
+</head>
+
+<body>
+    <!-- “圣杯”布局 -->
+    <!-- 	<div class="header">i am header</div>
+	<div class="artical">
+		<div class="w-middle">middle</div>
+		<div class="w-left">left</div>
+		<div class="w-right">right</div>
+	</div>
+	<div class="bottom">i am bottom</div> -->
+    <!-- “双飞翼”布局 -->
+    <div id="header">极客星球周刊</div>
+    <div id="artical">
+        <div id="middle" class="column">
+            <div class="content">
+                <p> Web 开发者需要具备的技术和能力
+                </p>
+                </br>
+                <p>如果我不得不给 Web 开发初学者一些建议的话，我绝对推荐从学习 JavaScript 开始。5-6 年前我不敢这么说，但今天它是让你同时能从前端和后端开始学习的唯一语言。此外，JavaScript 和 HTML、CSS 等其它 Web 技术的组合，如 nw.js 和 ApacheCordova， 可以令你获得更广泛的应用程序。 PHP，Ruby 以及 Python 仍然是非常流行的开发 Web 应用服务端的语言，但对于已经了解 JavaScript 的人来说，Node.js 才是更加自然的选择。它不仅可以节省你学习一种新的语言的时间，还提供了一个集成的前端，这在其它平台是不可能实现的。也就是说，在服务器和客户端之间共享代码甚至实现可以同时在 Node.js 和浏览器上运行的同构应用。React是一种框架，在同构应用开发领域中，它提供了一些十分有趣的和绝对值得挖掘的功能，与此同时，我们也可以看到更多的来自 PouchDB 的功能，PouchDB 是一种同构的 JavaScript 数据库，它将帮助开发人员比以往任何时候更容易地构建离线启用甚至线下先行的 Web 应用。</p>
+            </div>
+        </div>
+        <div id="w-left" class="column">
+            <p>移动应用开发</p>
+            <p>web开发</p>
+            <p>后端开发</p>
+            <p>大数据及商务智能</p>
+            <p>游戏开发</p>
+            <p>智能硬件</p>
+            <p>云计算与安全</p>
+        </div>
+        <div id="w-right" class="column">
+			<p>
+				相关资源
+			</p>
+			</br>
+			<p>程序员的自我修养</p>
+			<p>JavaScript语法详解</p>
+			<p>程序员的进阶过程</p>
+			<p>论一个程序员的闷与骚</p>
+        </div>
+    </div>
+    <div id="bottom">
+    	© 2002-2017 All Rights Reserved 京ICP备999999999号
+    </div>
+</body>
+
+</html>
+<!-- 总结 -->
+<!-- “圣杯”和“双飞翼”的区别：解决中间列的内容被覆盖掉的方法上。在三列都设置为浮动并且都居于同一行之前都是一样的。解决中间列的内容被覆盖掉这个问题上，“圣杯”是对最外边的容器的内边距进行调整，并加上对左右div进行定位调整。而“双飞翼”的解决方法更简单，直接给中间列加入一个子div，然后对子div的外边距进行调整，相应的调整为左右div的宽度即可。
+	“圣杯”和“双飞翼”主要用于解决的问题及其意义：
+	1，三列布局，中间宽度自适应，两边定宽。
+	2，中间栏是页面的核心，所以要在浏览器中优先展示渲染，因为浏览器的解析顺序是按照html的书写顺序。 -->

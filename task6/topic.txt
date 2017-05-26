@@ -1,0 +1,1 @@
+本周主要是原生JavaScript操作DOM、BOM等，以及JS事件、JS闭包、this等高级技巧。

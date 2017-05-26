@@ -1,0 +1,36 @@
+/*设置背景颜色*/
+
+body {
+    background-image: url(images/beijing.gif);
+}
+/*居中及边框设置*/
+table {
+    margin: auto;
+    border-collapse: separate;
+}
+/*字体大小设置*/
+td {
+    font-size: 11px;
+}
+/*去掉超链接下划线*/
+a:link {
+    text-decoration: none;
+}
+/*设置文本宽度*/
+.top {
+    width: 710px;
+    text-align: center;
+    margin: auto;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+/*头部字体大小设置*/
+.titleinfo {
+    font-size: 18px;
+    font-weight: bold;
+}
+/*设置底部table*/
+.bottom{
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}

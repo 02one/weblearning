@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>wings</title>
+    <link rel="stylesheet" type="text/css" href="wings.css">
+</head>
+
+<body>
+    <!-- “圣杯”布局 -->
+    <!-- 	<div class="header">i am header</div>
+	<div class="artical">
+		<div class="w-middle">middle</div>
+		<div class="w-left">left</div>
+		<div class="w-right">right</div>
+	</div>
+	<div class="bottom">i am bottom</div> -->
+    <!-- “双飞翼”布局 -->
+    <div id="header">前端工程师面试题</div>
+    <div id="artical">
+        <div id="middle" class="column">
+            <div class="content">
+                <iframe name="myframe">
+                    
+                </iframe>
+            </div>
+        </div>
+        <div id="w-left" class="column">
+            <p><h3>初级工程师面试题</h3></p>
+            <p><a href="http://blog.csdn.net/qq_26297581/article/details/51251524" target="myframe">试题一</a></p>
+            <p><a href="http://www.jobui.com/mianshiti/it/web/5066/" target="myframe">试题二</a></p>
+            <p><a href="https://buluo.qq.com/p/detail.html?bid=19952&pid=4724645-1460815425" target="myframe">试题三</a></p>
+            <p><a href="http://www.cnblogs.com/bigboyLin/p/5272902.html" target="myframe">试题四</a></p>
+            <p><a href="http://blog.csdn.net/qq443068902/article/details/51549607" target="myframe">试题五</a></p>
+            <p><h3>高级工程师面试题</h3></p>
+            <p><a href="http://blog.csdn.net/u014411742/article/details/51917163" target="myframe">试题一</a></p>
+            <p><a href="http://www.qdfuns.com/notes/12560/e86e1f2b905ddfbda1751ed9f450e205.html" target="myframe">试题二</a></p>
+            <p><h3>前端工程师知识体系思维导图</h3></p>
+            <p><a href="http://www.tuicool.com/articles/fI7Z7ff" target="myframe">思维导图及进阶</a></p>
+        </div>
+        <div id="w-right" class="column">
+			<p>
+				相关资源
+			</p>
+			</br>
+			<p>程序员的自我修养</p>
+			<p>JavaScript语法详解</p>
+			<p>程序员的进阶过程</p>
+			<p>论一个程序员的闷与骚</p>
+        </div>
+    </div>
+    <div id="bottom">
+    	© 2002-2017 All Rights Reserved 京ICP备999999999号
+    </div>
+</body>
+
+</html>
+<!-- 总结 -->
+<!-- “圣杯”和“双飞翼”的区别：解决中间列的内容被覆盖掉的方法上。在三列都设置为浮动并且都居于同一行之前都是一样的。解决中间列的内容被覆盖掉这个问题上，“圣杯”是对最外边的容器的内边距进行调整，并加上对左右div进行定位调整。而“双飞翼”的解决方法更简单，直接给中间列加入一个子div，然后对子div的外边距进行调整，相应的调整为左右div的宽度即可。
+	“圣杯”和“双飞翼”主要用于解决的问题及其意义：
+	1，三列布局，中间宽度自适应，两边定宽。
+	2，中间栏是页面的核心，所以要在浏览器中优先展示渲染，因为浏览器的解析顺序是按照html的书写顺序。 -->

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1" >
+	<title>欢迎</title>
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="login.css">
+	
+</head>
+<body>
+	<div class="container1">
+		<div class="container">
+			<div class="container-content">
+				<form class="form-signin">
+					<label for="inputscore">input your number:</label>
+					<br/>
+					<input type="text" id="firstItem" class="form-control" placeholder="number" autofocus  />
+					<select id="sign" >
+						<option value="+" selected="selected">+</option>
+						<option value="-">-</option>
+						<option value="*">*</option>
+						<option value="/">/</option>
+					</select>
+					<input type="text" id="secondItem" class="form-control" placeholder="number" autofocus  />
+					<i>=</i>
+					<input type="text" id="result" class="form-control" autofocus  />
+					<a href="#">
+						<input type="button" value="calculate" onclick="cal()" />
+					</a>
+				</form>
+			</div>
+			<footer class="footer-location">
+				<span >©2017  Copyright by 一个有限公司 京公网安备99999999999号</span>
+			</footer>	
+		</div>
+		
+	</div>
+	<script type="text/javascript" src="cal.js"></script>
+</body>
+</html>

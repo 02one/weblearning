@@ -1,0 +1,165 @@
+/*使用旧版弹性盒子实现居中对齐*/
+
+body {
+    margin: 0;
+    height: 100%;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    background-color: #eee;
+}
+
+.top {
+    background-color: gray;
+    width: 40%;
+    border-color: green;
+    border-style: dotted;
+    border-width: 4px;
+    height: 30px;
+    padding: 0;
+}
+
+/*怪异盒子*/
+.abnormal {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    box-sizing: border-box;
+    border: 5px blue solid;
+    padding: 5px;
+    display: inline-block;
+    float: left;
+    /*怪异盒模型    
+     * box-sizing: border-box  
+        和标准盒模型不一样的地方在于 padding 和 border 不会让整体宽度增加  
+    */
+}
+/*正常盒子*/
+.normal {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    border: 5px red solid;
+    padding-left: 5px;
+    display: inline-block;
+    float: left;
+    /*怪异盒模型    
+     * box-sizing: border-box  
+        和标准盒模型不一样的地方在于 padding 和 border 不会让整体宽度增加  
+    */
+}
+
+.abnormal1 {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    box-sizing: border-box;
+    border: 5px blue solid;
+    padding: 5px;
+    display: inline-block;
+    float: right;
+    /*怪异盒模型    
+     * box-sizing: border-box  
+        和标准盒模型不一样的地方在于 padding 和 border 不会让整体宽度增加  
+    */
+}
+
+.normal1 {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    border: 5px red solid;
+    padding-left: 5px;
+    display: inline-block;
+    float: right;
+    /*怪异盒模型    
+     * box-sizing: border-box  
+        和标准盒模型不一样的地方在于 padding 和 border 不会让整体宽度增加  
+    */
+}
+
+
+/*弹性盒子*/
+
+.center {
+    /*background-color: red;*/
+    height: 80%;
+    width: 80%;
+}
+
+
+/*实现分栏*/
+
+.ccolumn {
+    background-color: #ddd;
+    -webkit-column-count: 3;
+    -webkit-column-rule-style: dotted;
+}
+
+/*水平分栏*/
+.h-column {
+    background-color: green;
+    display: -webkit-box;/*旧版本*/
+	-webkit-box-orient:vertical;
+	box-orient:vertical;
+	/*display: -webkit-flex;*//*新版本*/
+    /*-webkit-flex-direction: column;
+    flex-direction: column;*/
+}
+
+
+/*垂直分栏*/
+
+.v-column {
+    background-color: #666;
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+    /*height: 100px;*/
+}
+
+
+/*水平分栏*/
+
+.h1-column {
+    background-color: red;
+    height: 50px;
+}
+
+.h2-column {
+    background-color: blue;
+    height: 50px;
+}
+
+.h3-column {
+    background-color: gray;
+    height: 50px;
+}
+
+
+/*垂直分栏*/
+.v1-column {
+    background-image: url(images/qian3.jpg);
+    -webkit-flex: 1;
+    /*在该盒子中所占的比例*/
+    background-repeat: no-repeat;
+    height: 400px;
+    order: 3;  /*排序*/
+}
+
+.v2-column {
+    background-image: url(images/qian2.jpg);
+    -webkit-flex: 2;
+    /*在该盒子中所占的比例*/
+    background-repeat: no-repeat;
+    height: 400px;
+    order: 1;
+}
+
+.v3-column {
+    background-image: url(images/qian1.jpg);
+    -webkit-flex: 2;
+    /*在该盒子中所占的比例*/
+    background-repeat: no-repeat;
+    height: 400px;
+    order: 2;
+}

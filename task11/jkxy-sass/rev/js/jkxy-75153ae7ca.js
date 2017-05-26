@@ -1,0 +1,1 @@
+window.onload=function(){var o=document.getElementById("top"),n=null,l=document.documentElement.clientHeight;window.onscroll=function(){var n=document.body.scrollTop;o.style.display=n>=l?"block":"none"},o.onclick=function(){n=setInterval(function(){var o=document.body.scrollTop,l=o/5;document.body.scrollTop=o-l,0===o&&clearInterval(n)},30)}};

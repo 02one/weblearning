@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>极客学院IT在线教育平台-中国专业的IT职业在线教育平台</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="jkxy.css">
+
+</head>
+<body>
+	<div class="wrapper">
+	<!-- ==================头部============================ -->
+	<!-- 问题：
+		1：随着页面宽度的变小，各个<div>会挤压 -->
+		<!-- 答:因为用了bootstrap的container -->
+		<header id="header" class="navbar navbar-default">
+			<div class="mycontainer">
+				<div class="background-line">
+					<a href="www.jikexueyuan.com" >
+						<img src="images/jkxy-logo.png" class="jkxy-logo">
+					</a>
+					<!-- 头部文字块 -->
+					<div class="nav-firstpage">
+						<ul class="navba">
+							<li>
+								<a href="www.jikexueyuan.com" class="fp">首页</a>
+							</li>
+							<li class="dropdown"> 
+								<a class="dropdown-toggle" data-toggle="dropdown" role="hover" aria-haspopup="true" aria-expanded="true">职业学院 
+									<i class="arrow-icon"></i>
+								</a>
+								<ul class="dropdown-menu">
+									<li><h6>前端学院</h6></li>
+									<li><a href="//www.jikexueyuan.com/zhiye/web"><i class="web-icon"></i>Web 前端工程师</a></li>
+									<li><a href="//www.jikexueyuan.com/zhiye/wechatapp"><i class="wechat-icon"></i>微信小程序工程师</a></li>
+									<li><h6>后端学院</h6></li>
+									<li><a href="//www.jikexueyuan.com/zhiye/python"><i class="web-icon"></i>Python Web工程师</a></li>
+									<li><a href="//www.jikexueyuan.com/zhiye/go"><i class="wechat-icon"></i>Go语言工程师</a></li>
+									<li><h6>移动学院</h6></li>
+									<li><a href="//www.jikexueyuan.com/zhiye/web"><i class="web-icon"></i>Android工程师</a></li>
+									<li><a href="//www.jikexueyuan.com/zhiye/wechatapp"><i class="wechat-icon"></i>IOS工程师</a></li>
+								</ul>
+							</li>
+							<li class="dropdown"> 
+								<a class="dropdown-toggle" data-toggle="dropdown" role="hover" aria-haspopup="true" aria-expanded="flase">会员课程 
+									<i class="arrow-icon"></i>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a href="//www.jikexueyuan.com/zhiye/web"><i class="kck-icon"></i>课程库<span>2500+</span></a></li>
+									<li><a href="//www.jikexueyuan.com/zhiye/wechatapp"><i class="zyljt-icon"></i>职业路径图<span>9</span></a></li>
+									<li><a href="//www.jikexueyuan.com/zhiye/python"><i class="zstxt-icon"></i>知识体系图<span>101</span></a></li>
+									<li><a href="//www.jikexueyuan.com/zhiye/go"><i class="wechat-icon"></i>系列课程<span>2500+</span></a></li>
+									<li><a href="//www.jikexueyuan.com/zhiye/python"><i class="web-icon"></i>课程标签<span>4000+</span></a></li>
+									<li><a href="//www.jikexueyuan.com/zhiye/go"><i class="wechat-icon"></i>VIP会员购买<span>30/月  260/年</span></a></li>
+								</ul>
+							</li>
+							<li class="dropdown"> 
+								<a class="dropdown-toggle" data-toggle="dropdown" role="hover" aria-haspopup="true" aria-expanded="flase">极客社区 
+									<i class="arrow-icon"></i>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a href="//www.jikexueyuan.com/zhiye/python"><i class="web-icon"></i>技术问答</a></li>
+									<li><a href="//www.jikexueyuan.com/zhiye/go"><i class="wechat-icon"></i>Wiki</a></li>
+									<li><a href="//www.jikexueyuan.com/zhiye/python"><i class="web-icon"></i>社群</a></li>
+									<li><a href="//www.jikexueyuan.com/zhiye/go"><i class="wechat-icon"></i>资源下载</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div class="hideSearch">
+						<img id="searchBtn" src="images/search-icon.png" />
+						<input id="webSearch" type="text" placeholder="搜索课程、问答或Wiki">
+						<div class="searchKey">
+							<span>Android</span>
+							<span>iOS</span>
+							<span>HTML5</span>
+							<img src="images/close-icon.png" class="close-icon" />
+						</div>
+						
+
+					</div>
+					<!-- 头部小图标块 -->
+					<div class="icon-box">
+						<span class="search-icon">	
+						</span>
+						<span class="app-icon dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" role="hover" aria-haspopup="true" aria-expanded="flase">
+							</a>
+								<ul class="dropdown-menu">
+									<li><img src="images/heade-rwm.png"></li>
+								</ul>
+						</span>
+						<span class="login-icon dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" role="hover" aria-haspopup="true" aria-expanded="flase">
+							</a>
+								<ul class="dropdown-menu">
+									<li><a href="http://passport.jikexueyuan.com/sso/reg_phone" class="reg_lg">注册 </a>|<a href="http://passport.jikexueyuan.com/sso/login" class="reg_lg">登入</a></li>
+									<li><a href="http://passport.jikexueyuan.com/sso/login"><i class="study"></i>学习中心</a></li>
+									<li><a href=""><i class="page"></i>个人主页</a></li>
+									<li><a href=""><i class="message"></i>消息通知</a></li>
+									<li><a href=""><i class="setting"></i>账号设置</a></li>
+								</ul>
+						</span>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- ===================主体部分======================== -->
+		<!-- 问题：
+		1：图片滚动部分。图片左右滚动如何用CSS实现无缝衔接？ -->
+		<div class="mycontainer">
+			<div class="background-line">
+				<div class="artical">
+					<div class="sidebar">
+						<div class="sidebarCategory">
+							<div class="courseLib">
+								<img src="images/icon-course.png" />
+								<a href="">课程库</a>
+							</div>
+							<ul>
+								<li>
+									<div class="development">
+										<a href="">移动开发</a>
+									</div>
+									<div class="sidebarMenu" sidebarMenu>
+										<dl>
+											<dt>
+												<a href="">应用开发</a>
+											</dt>
+											<dd><a href="">Android | </a><a href="">ios</a></dd>
+										</dl>
+										<dl>
+											<dt>
+												<a href="">游戏开发</a>
+											</dt>
+											<dd><a href="">Cocos | </a><a href="">Unity3D | </a><a href="">SpriteKit 2D | </a><a href="">Unreal</a></dd>
+										</dl>
+										<dl>
+											<dt>
+												<a href="">常用框架</a>
+											</dt>
+											<dd><a href="">Cordova | </a><a href="">React Native</a></dd>
+										</dl>
+									</div>
+								</li>
+								<li>
+									<div class="development">
+										<a href="">前端开发</a>
+									</div>
+									<div class="sidebarMenu" sidebarMenu>
+										<dl>
+											<dt>
+												<a href="">前端基础</a>
+											</dt>
+											<dd><a href="">HTML | </a><a href="">CSS</a></dd>
+										</dl>
+										<dl>
+											<dt>
+												<a href="">前端进阶</a>
+											</dt>
+											<dd><a href="">Typescript | </a><a href="">前端安全 | </a><a href="">项目实战 </a></dd>
+										</dl>
+										<dl>
+											<dt>
+												<a href="">前端框架</a>
+											</dt>
+											<dd><a href="">Cordova | </a><a href="">React Native</a></dd>
+										</dl>
+										<dl>
+											<dt>
+												<a href="">HTML5游戏</a>
+											</dt>
+											<dd><a href="">Cordova | </a><a href="">React Native</a></dd>
+										</dl>
+									</div>
+								</li>
+								<li>
+									<div class="development">
+										<a href="">后端开发</a>
+									</div>
+									<div class="sidebarMenu" sidebarMenu>
+										<dl>
+											<dt>
+												<a href="">后端基础</a>
+											</dt>
+											<dd><a href="">HTML | </a><a href="">CSS</a></dd>
+										</dl>
+										<dl>
+											<dt>
+												<a href="">前端进阶</a>
+											</dt>
+											<dd><a href="">Typescript | </a><a href="">前端安全 | </a><a href="">项目实战 </a></dd>
+										</dl>
+										<dl>
+											<dt>
+												<a href="">前端框架</a>
+											</dt>
+											<dd><a href="">Cordova | </a><a href="">React Native</a></dd>
+										</dl>
+										<dl>
+											<dt>
+												<a href="">HTML5游戏</a>
+											</dt>
+											<dd><a href="">Cordova | </a><a href="">React Native</a></dd>
+										</dl>
+									</div>
+								</li>
+								<li>
+									<div class="development">
+										<a href="">基础知识</a>
+									</div>
+									<div class="sidebarMenu" sidebarMenu>
+										<dl>
+											<dt>
+												<a href="">基础知识</a>
+											</dt>
+											<dd><a href="">HTML | </a><a href="">CSS</a></dd>
+										</dl>
+										<dl>
+											<dt>
+												<a href="">前端进阶</a>
+											</dt>
+											<dd><a href="">Typescript | </a><a href="">前端安全 | </a><a href="">项目实战 </a></dd>
+										</dl>
+										<dl>
+											<dt>
+												<a href="">前端框架</a>
+											</dt>
+											<dd><a href="">Cordova | </a><a href="">React Native</a></dd>
+										</dl>
+										<dl>
+											<dt>
+												<a href="">HTML5游戏</a>
+											</dt>
+											<dd><a href="">Cordova | </a><a href="">React Native</a></dd>
+										</dl>
+									</div>
+								</li>
+								<li>
+									<div class="development">
+										<a href="">云计算&大数据</a>
+									</div>
+									<div class="sidebarMenu" sidebarMenu>
+										<dl>
+											<dt>
+												<a href="">大数据</a>
+											</dt>
+											<dd><a href="">HTML | </a><a href="">CSS</a></dd>
+										</dl>
+										<dl>
+											<dt>
+												<a href="">前端进阶</a>
+											</dt>
+											<dd><a href="">Typescript | </a><a href="">前端安全 | </a><a href="">项目实战 </a></dd>
+										</dl>
+										<dl>
+											<dt>
+												<a href="">前端框架</a>
+											</dt>
+											<dd><a href="">Cordova | </a><a href="">React Native</a></dd>
+										</dl>
+										<dl>
+											<dt>
+												<a href="">HTML5游戏</a>
+											</dt>
+											<dd><a href="">Cordova | </a><a href="">React Native</a></dd>
+										</dl>
+									</div>
+								</li>
+								<li>
+									<div class="development">
+										<a href="">智能硬件&物联网</a>
+									</div>
+									<div class="sidebarMenu" sidebarMenu>
+										<dl>
+											<dt>
+												<a href="">智能硬件</a>
+											</dt>
+											<dd><a href="">HTML | </a><a href="">CSS</a></dd>
+										</dl>
+										<dl>
+											<dt>
+												<a href="">前端进阶</a>
+											</dt>
+											<dd><a href="">Typescript | </a><a href="">前端安全 | </a><a href="">项目实战 </a></dd>
+										</dl>
+										<dl>
+											<dt>
+												<a href="">前端框架</a>
+											</dt>
+											<dd><a href="">Cordova | </a><a href="">React Native</a></dd>
+										</dl>
+										<dl>
+											<dt>
+												<a href="">HTML5游戏</a>
+											</dt>
+											<dd><a href="">Cordova | </a><a href="">React Native</a></dd>
+										</dl>
+									</div>
+								</li>
+								<li>
+									<div class="development">
+										<a href="">数据库</a>
+									</div>
+									<div class="sidebarMenu" sidebarMenu>
+										<dl>
+											<dt>
+												<a href="">数据库</a>
+											</dt>
+											<dd><a href="">HTML | </a><a href="">CSS</a></dd>
+										</dl>
+										<dl>
+											<dt>
+												<a href="">前端进阶</a>
+											</dt>
+											<dd><a href="">Typescript | </a><a href="">前端安全 | </a><a href="">项目实战 </a></dd>
+										</dl>
+										<dl>
+											<dt>
+												<a href="">前端框架</a>
+											</dt>
+											<dd><a href="">Cordova | </a><a href="">React Native</a></dd>
+										</dl>
+										<dl>
+											<dt>
+												<a href="">HTML5游戏</a>
+											</dt>
+											<dd><a href="">Cordova | </a><a href="">React Native</a></dd>
+										</dl>
+									</div>
+								</li>
+								<li>
+									<div class="development">
+										<a href="">认证考试</a>
+									</div>
+									<div class="sidebarMenu" sidebarMenu>
+										<dl>
+											<dt>
+												<a href="">认证考试</a>
+											</dt>
+											<dd><a href="">HTML | </a><a href="">CSS</a></dd>
+										</dl>
+										<dl>
+											<dt>
+												<a href="">前端进阶</a>
+											</dt>
+											<dd><a href="">Typescript | </a><a href="">前端安全 | </a><a href="">项目实战 </a></dd>
+										</dl>
+										<dl>
+											<dt>
+												<a href="">前端框架</a>
+											</dt>
+											<dd><a href="">Cordova | </a><a href="">React Native</a></dd>
+										</dl>
+										<dl>
+											<dt>
+												<a href="">HTML5游戏</a>
+											</dt>
+											<dd><a href="">Cordova | </a><a href="">React Native</a></dd>
+										</dl>
+									</div>
+								</li>
+								<li>
+									<div class="development">
+										<a href="">企业IT</a>
+									</div>
+									<div class="sidebarMenu"  sidebarMenu>
+										<dl>
+											<dt>
+												<a href="">企业IT</a>
+											</dt>
+											<dd><a href="">HTML | </a><a href="">CSS</a></dd>
+										</dl>
+										<dl>
+											<dt>
+												<a href="">前端进阶</a>
+											</dt>
+											<dd><a href="">Typescript | </a><a href="">前端安全 | </a><a href="">项目实战 </a></dd>
+										</dl>
+										<dl>
+											<dt>
+												<a href="">前端框架</a>
+											</dt>
+											<dd><a href="">Cordova | </a><a href="">React Native</a></dd>
+										</dl>
+										<dl>
+											<dt>
+												<a href="">HTML5游戏</a>
+											</dt>
+											<dd><a href="">Cordova | </a><a href="">React Native</a></dd>
+										</dl>
+									</div>
+								</li>
+								<li>
+									<div class="development">
+										<a href="">设计&产品&测试</a>
+									</div>
+									<div class="sidebarMenu" sidebarMenu>
+										<dl>
+											<dt>
+												<a href="">设计</a>
+											</dt>
+											<dd><a href="">HTML | </a><a href="">CSS</a></dd>
+										</dl>
+										<dl>
+											<dt>
+												<a href="">前端进阶</a>
+											</dt>
+											<dd><a href="">Typescript | </a><a href="">前端安全 | </a><a href="">项目实战 </a></dd>
+										</dl>
+										<dl>
+											<dt>
+												<a href="">前端框架</a>
+											</dt>
+											<dd><a href="">Cordova | </a><a href="">React Native</a></dd>
+										</dl>
+										<dl>
+											<dt>
+												<a href="">HTML5游戏</a>
+											</dt>
+											<dd><a href="">Cordova | </a><a href="">React Native</a></dd>
+										</dl>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="career">
+							<ul>
+								<li>
+									<img src="images/icon-zylj.png" />
+									<a href="">职业路径图</a>
+									<span>查看全部</span>
+								</li>
+								<li>
+									<img src="images/icon-zstx.png" />
+									<a href="">知识体系图</a>
+									<span>查看全部</span>
+								</li>
+								<li>
+									<img src="images/icon-xlkc.png" />
+									<a href="">系列课程</a>
+									<span>查看全部</span>
+								</li>
+								<li>
+									<img src="images/icon-kcbq.png" />
+									<a href="">课程标签</a>
+									<span>查看全部</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="content">
+						<div class="navb">
+							<dl>
+								<dt>全部课程</dt>
+								<dd></dd>
+							</dl>
+							<dl>
+								<dt>最新<i class="arrow-icon"></i></dt>
+								<dd>
+									<p>最新</p>
+									<p><a href="">最新</a></p>
+									<p><a href="">最热</a></p>
+								</dd>
+							</dl>
+							<dl>
+								<dt>课程类型<i class="arrow-icon"></i></dt>
+								<dd>
+									<p>课程类型</p>
+									<p><a href="">VIP</a></p>
+									<p><a href="">免费</a></p>
+									<p><a href="">认证专享</a></p>
+									<p><a href="">全部</a></p>
+								</dd>
+							</dl>
+							<dl>
+								<dt>内容类型<i class="arrow-icon"></i></dt>
+								<dd>
+									<p>内容类型</p>
+									<p><a href="">知识精讲</a></p>
+									<p><a href="">项目实战</a></p>
+								</dd>
+							</dl>
+							<dl>
+								<dt>难度等级<i class="arrow-icon"></i></dt>
+								<dd>
+									<p>难度等级</p>
+									<p><a href="">初级</a></p>
+									<p><a href="">中级</a></p>
+									<p><a href="">高级</a></p>
+								</dd>
+							</dl>
+							<ul>
+								<li class="columnSort"><img src="images/icon-kuai.png" /></li>
+								<li class="rowSort"><img src="images/icon-list.png" /></li>
+							</ul>
+						</div>
+						<div class="main">
+							<ul>
+								<li>
+									<div class="coursePic">
+										<img src="images/course1.jpeg">
+										<div class="hidePic">
+											<img src="images/shoucang.png" />
+											<img src="images/player_icon.png" />
+										</div>
+									</div>
+									<div class="courseIntroduction">
+										<div class="brief">
+											<p>腾讯云产品-游戏云</p>
+											<p><img src="images/clok.png" />5课时 177分钟<img src="images/cloud.png" /></p>
+										</div>
+										<div class="detail">
+											<p>腾讯云产品-游戏云</p>
+											<p>本课程主要介绍腾讯游戏云相关知识</p>
+											<p><img src="images/clok.png" />5课时 177分钟<span>4294人学习</span></p>
+											<p><img src="images/tow.png" />中级<img src="images/cloud.png" /></p>
+										</div>						
+									</div>
+								</li>
+								<li>
+									<div class="coursePic">
+										<img src="images/course2.png">
+										<div class="hidePic">
+											<img src="images/shoucang.png" />
+											<img src="images/player_icon.png" />
+										</div>
+									</div>
+									<div class="courseIntroduction">
+										<div class="brief">
+											<p>腾讯云产品-游戏云</p>
+											<p><img src="images/clok.png" />5课时 177分钟<img src="images/cloud.png" /></p>
+										</div>
+										<div class="detail">
+											<p>腾讯云产品-游戏云</p>
+											<p>本课程主要介绍腾讯游戏云相关知识</p>
+											<p><img src="images/clok.png" />5课时 177分钟<span>4294人学习</span></p>
+											<p><img src="images/tow.png" />中级<img src="images/cloud.png" /></p>
+										</div>						
+									</div>
+								</li>
+								<li>
+									<div class="coursePic">
+										<img src="images/course3.jpg">
+										<div class="hidePic">
+											<img src="images/shoucang.png" />
+											<img src="images/player_icon.png" />
+										</div>
+									</div>
+									<div class="courseIntroduction">
+										<div class="brief">
+											<p>腾讯云产品-游戏云</p>
+											<p><img src="images/clok.png" />5课时 177分钟<img src="images/cloud.png" /></p>
+										</div>
+										<div class="detail">
+											<p>腾讯云产品-游戏云</p>
+											<p>本课程主要介绍腾讯游戏云相关知识</p>
+											<p><img src="images/clok.png" />5课时 177分钟<span>4294人学习</span></p>
+											<p><img src="images/tow.png" />中级<img src="images/cloud.png" /></p>
+										</div>						
+									</div>
+								</li>
+								<li>
+									<div class="coursePic">
+										<img src="images/course4.jpg">
+										<div class="hidePic">
+											<img src="images/shoucang.png" />
+											<img src="images/player_icon.png" />
+										</div>
+									</div>
+									<div class="courseIntroduction">
+										<div class="brief">
+											<p>腾讯云产品-游戏云</p>
+											<p><img src="images/clok.png" />5课时 177分钟<img src="images/cloud.png" /></p>
+										</div>
+										<div class="detail">
+											<p>腾讯云产品-游戏云</p>
+											<p>本课程主要介绍腾讯游戏云相关知识</p>
+											<p><img src="images/clok.png" />5课时 177分钟<span>4294人学习</span></p>
+											<p><img src="images/tow.png" />中级<img src="images/cloud.png" /></p>
+										</div>						
+									</div>
+								</li>
+								<li>
+									<div class="coursePic">
+										<img src="images/course5.jpg">
+										<div class="hidePic">
+											<img src="images/shoucang.png" />
+											<img src="images/player_icon.png" />
+										</div>
+									</div>
+									<div class="courseIntroduction">
+										<div class="brief">
+											<p>腾讯云产品-游戏云</p>
+											<p><img src="images/clok.png" />5课时 177分钟<img src="images/cloud.png" /></p>
+										</div>
+										<div class="detail">
+											<p>腾讯云产品-游戏云</p>
+											<p>本课程主要介绍腾讯游戏云相关知识</p>
+											<p><img src="images/clok.png" />5课时 177分钟<span>4294人学习</span></p>
+											<p><img src="images/tow.png" />中级<img src="images/cloud.png" /></p>
+										</div>						
+									</div>
+								</li>
+								<li>
+									<div class="coursePic">
+										<img src="images/course6.jpg">
+										<div class="hidePic">
+											<img src="images/shoucang.png" />
+											<img src="images/player_icon.png" />
+										</div>
+									</div>
+									<div class="courseIntroduction">
+										<div class="brief">
+											<p>腾讯云产品-游戏云</p>
+											<p><img src="images/clok.png" />5课时 177分钟<img src="images/cloud.png" /></p>
+										</div>
+										<div class="detail">
+											<p>腾讯云产品-游戏云</p>
+											<p>本课程主要介绍腾讯游戏云相关知识</p>
+											<p><img src="images/clok.png" />5课时 177分钟<span>4294人学习</span></p>
+											<p><img src="images/tow.png" />中级<img src="images/cloud.png" /></p>
+										</div>						
+									</div>
+								</li>
+								<li>
+									<div class="coursePic">
+										<img src="images/course1.jpeg">
+										<div class="hidePic">
+											<img src="images/shoucang.png" />
+											<img src="images/player_icon.png" />
+										</div>
+									</div>
+									<div class="courseIntroduction">
+										<div class="brief">
+											<p>腾讯云产品-游戏云</p>
+											<p><img src="images/clok.png" />5课时 177分钟<img src="images/cloud.png" /></p>
+										</div>
+										<div class="detail">
+											<p>腾讯云产品-游戏云</p>
+											<p>本课程主要介绍腾讯游戏云相关知识</p>
+											<p><img src="images/clok.png" />5课时 177分钟<span>4294人学习</span></p>
+											<p><img src="images/tow.png" />中级<img src="images/cloud.png" /></p>
+										</div>						
+									</div>
+								</li>
+								<li>
+									<div class="coursePic">
+										<img src="images/course2.png">
+										<div class="hidePic">
+											<img src="images/shoucang.png" />
+											<img src="images/player_icon.png" />
+										</div>
+									</div>
+									<div class="courseIntroduction">
+										<div class="brief">
+											<p>腾讯云产品-游戏云</p>
+											<p><img src="images/clok.png" />5课时 177分钟<img src="images/cloud.png" /></p>
+										</div>
+										<div class="detail">
+											<p>腾讯云产品-游戏云</p>
+											<p>本课程主要介绍腾讯游戏云相关知识</p>
+											<p><img src="images/clok.png" />5课时 177分钟<span>4294人学习</span></p>
+											<p><img src="images/tow.png" />中级<img src="images/cloud.png" /></p>
+										</div>						
+									</div>
+								</li>
+								<li>
+									<div class="coursePic">
+										<img src="images/course3.jpg">
+										<div class="hidePic">
+											<img src="images/shoucang.png" />
+											<img src="images/player_icon.png" />
+										</div>
+									</div>
+									<div class="courseIntroduction">
+										<div class="brief">
+											<p>腾讯云产品-游戏云</p>
+											<p><img src="images/clok.png" />5课时 177分钟<img src="images/cloud.png" /></p>
+										</div>
+										<div class="detail">
+											<p>腾讯云产品-游戏云</p>
+											<p>本课程主要介绍腾讯游戏云相关知识</p>
+											<p><img src="images/clok.png" />5课时 177分钟<span>4294人学习</span></p>
+											<p><img src="images/tow.png" />中级<img src="images/cloud.png" /></p>
+										</div>						
+									</div>
+								</li>
+								<li>
+									<div class="coursePic">
+										<img src="images/course4.jpg">
+										<div class="hidePic">
+											<img src="images/shoucang.png" />
+											<img src="images/player_icon.png" />
+										</div>
+									</div>
+									<div class="courseIntroduction">
+										<div class="brief">
+											<p>腾讯云产品-游戏云</p>
+											<p><img src="images/clok.png" />5课时 177分钟<img src="images/cloud.png" /></p>
+										</div>
+										<div class="detail">
+											<p>腾讯云产品-游戏云</p>
+											<p>本课程主要介绍腾讯游戏云相关知识</p>
+											<p><img src="images/clok.png" />5课时 177分钟<span>4294人学习</span></p>
+											<p><img src="images/tow.png" />中级<img src="images/cloud.png" /></p>
+										</div>						
+									</div>
+								</li>
+								<li>
+									<div class="coursePic">
+										<img src="images/course5.jpg">
+										<div class="hidePic">
+											<img src="images/shoucang.png" />
+											<img src="images/player_icon.png" />
+										</div>
+									</div>
+									<div class="courseIntroduction">
+										<div class="brief">
+											<p>腾讯云产品-游戏云</p>
+											<p><img src="images/clok.png" />5课时 177分钟<img src="images/cloud.png" /></p>
+										</div>
+										<div class="detail">
+											<p>腾讯云产品-游戏云</p>
+											<p>本课程主要介绍腾讯游戏云相关知识</p>
+											<p><img src="images/clok.png" />5课时 177分钟<span>4294人学习</span></p>
+											<p><img src="images/tow.png" />中级<img src="images/cloud.png" /></p>
+										</div>						
+									</div>
+								</li>
+								<li>
+									<div class="coursePic">
+										<img src="images/course6.jpg">
+										<div class="hidePic">
+											<img src="images/shoucang.png" />
+											<img src="images/player_icon.png" />
+										</div>
+									</div>
+									<div class="courseIntroduction">
+										<div class="brief">
+											<p>腾讯云产品-游戏云</p>
+											<p><img src="images/clok.png" />5课时 177分钟<img src="images/cloud.png" /></p>
+										</div>
+										<div class="detail">
+											<p>腾讯云产品-游戏云</p>
+											<p>本课程主要介绍腾讯游戏云相关知识</p>
+											<p><img src="images/clok.png" />5课时 177分钟<span>4294人学习</span></p>
+											<p><img src="images/tow.png" />中级<img src="images/cloud.png" /></p>
+										</div>						
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="main2">
+							<ul>
+								<li>
+									<div class="lessonImg">
+										<a href=""><img src="images/course1.jpeg" /></a>
+										<div class="lessonPlay">
+											<a href=""><img src="images/player_icon.png" /></a>
+										</div>
+									</div>
+									<div class="lessonInfo">
+										<p>
+											<a href="">腾讯云产品-游戏云</a>
+											<img src="images/cloud.png" />
+										</p>
+										<p>本课程主要介绍腾讯游戏云相关知识</p>
+										<p>
+											<img src="images/clok.png" />
+											<span>5课时 177分钟</span>
+											<img src="images/tow.png" />
+											<span>中级</span>
+											<span>4316人学习</span>
+										</p>
+									</div>
+								</li>
+								<li>
+									<div class="lessonImg">
+										<a href=""><img src="images/course2.png" /></a>
+										<div class="lessonPlay">
+											<a href=""><img src="images/player_icon.png" /></a>
+										</div>
+									</div>
+									<div class="lessonInfo">
+										<p>
+											<a href="">前端开发环境搭建(三种工具任选其一)</a>
+											<img src="images/cloud.png" />
+										</p>
+										<p>本课程主要介绍前端开发工具</p>
+										<p>
+											<img src="images/clok.png" />
+											<span>5课时 177分钟</span>
+											<img src="images/tow.png" />
+											<span>中级</span>
+											<span>4316人学习</span>
+										</p>
+									</div>
+								</li>
+								<li>
+									<div class="lessonImg">
+										<a href=""><img src="images/course3.jpg" /></a>
+										<div class="lessonPlay">
+											<a href=""><img src="images/player_icon.png" /></a>
+										</div>
+									</div>
+									<div class="lessonInfo">
+										<p>
+											<a href="">腾讯大咖分享</a>
+											<img src="images/cloud.png" />
+										</p>
+										<p>本课程主要是由腾讯大咖给大家分享创业心经</p>
+										<p>
+											<img src="images/clok.png" />
+											<span>5课时 177分钟</span>
+											<img src="images/tow.png" />
+											<span>中级</span>
+											<span>4316人学习</span>
+										</p>
+									</div>
+								</li>
+								<li>
+									<div class="lessonImg">
+										<a href=""><img src="images/course4.jpg" /></a>
+										<div class="lessonPlay">
+											<a href=""><img src="images/player_icon.png" /></a>
+										</div>
+									</div>
+									<div class="lessonInfo">
+										<p>
+											<a href="">腾讯云产品-腾讯云通信</a>
+											<img src="images/cloud.png" />
+										</p>
+										<p>本课程主要通过实操演练，教大家快速完成SDK集成</p>
+										<p>
+											<img src="images/clok.png" />
+											<span>5课时 177分钟</span>
+											<img src="images/tow.png" />
+											<span>中级</span>
+											<span>4316人学习</span>
+										</p>
+									</div>
+								</li>
+								<li>
+									<div class="lessonImg">
+										<a href=""><img src="images/course1.jpeg" /></a>
+										<div class="lessonPlay">
+											<a href=""><img src="images/player_icon.png" /></a>
+										</div>
+									</div>
+									<div class="lessonInfo">
+										<p>
+											<a href="">腾讯云产品-游戏云</a>
+											<img src="images/cloud.png" />
+										</p>
+										<p>本课程主要介绍腾讯游戏云相关知识</p>
+										<p>
+											<img src="images/clok.png" />
+											<span>5课时 177分钟</span>
+											<img src="images/tow.png" />
+											<span>中级</span>
+											<span>4316人学习</span>
+										</p>
+									</div>
+								</li>
+								<li>
+									<div class="lessonImg">
+										<a href=""><img src="images/course2.png" /></a>
+										<div class="lessonPlay">
+											<a href=""><img src="images/player_icon.png" /></a>
+										</div>
+									</div>
+									<div class="lessonInfo">
+										<p>
+											<a href="">前端开发环境搭建(三种工具任选其一)</a>
+											<img src="images/cloud.png" />
+										</p>
+										<p>本课程主要介绍前端开发工具</p>
+										<p>
+											<img src="images/clok.png" />
+											<span>5课时 177分钟</span>
+											<img src="images/tow.png" />
+											<span>中级</span>
+											<span>4316人学习</span>
+										</p>
+									</div>
+								</li>
+								<li>
+									<div class="lessonImg">
+										<a href=""><img src="images/course3.jpg" /></a>
+										<div class="lessonPlay">
+											<a href=""><img src="images/player_icon.png" /></a>
+										</div>
+									</div>
+									<div class="lessonInfo">
+										<p>
+											<a href="">腾讯大咖分享</a>
+											<img src="images/cloud.png" />
+										</p>
+										<p>本课程主要是由腾讯大咖给大家分享创业心经</p>
+										<p>
+											<img src="images/clok.png" />
+											<span>5课时 177分钟</span>
+											<img src="images/tow.png" />
+											<span>中级</span>
+											<span>4316人学习</span>
+										</p>
+									</div>
+								</li>
+								<li>
+									<div class="lessonImg">
+										<a href=""><img src="images/course4.jpg" /></a>
+										<div class="lessonPlay">
+											<a href=""><img src="images/player_icon.png" /></a>
+										</div>
+									</div>
+									<div class="lessonInfo">
+										<p>
+											<a href="">腾讯云产品-腾讯云通信</a>
+											<img src="images/cloud.png" />
+										</p>
+										<p>本课程主要通过实操演练，教大家快速完成SDK集成</p>
+										<p>
+											<img src="images/clok.png" />
+											<span>5课时 177分钟</span>
+											<img src="images/tow.png" />
+											<span>中级</span>
+											<span>4316人学习</span>
+										</p>
+									</div>
+								</li>
+								<li>
+									<div class="lessonImg">
+										<a href=""><img src="images/course4.jpg" /></a>
+										<div class="lessonPlay">
+											<a href=""><img src="images/player_icon.png" /></a>
+										</div>
+									</div>
+									<div class="lessonInfo">
+										<p>
+											<a href="">腾讯云产品-腾讯云通信</a>
+											<img src="images/cloud.png" />
+										</p>
+										<p>本课程主要通过实操演练，教大家快速完成SDK集成</p>
+										<p>
+											<img src="images/clok.png" />
+											<span>5课时 177分钟</span>
+											<img src="images/tow.png" />
+											<span>中级</span>
+											<span>4316人学习</span>
+										</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="pageNav">
+							<ul>
+								<li class="pgNext pgdisable">首页</li>
+								<li class="pgNext pgdisable">上一页</li>
+								<li class="pgNumber">1</li>
+								<li class="pgNumber">2</li>
+								<li class="pgNumber">3</li>
+								<li class="pgNumber">4</li>
+								<li class="pgNumber">5</li>
+								<li class="pgNumber">6</li>
+								<li class="pgNumber">7</li>
+								<li class="">...</li>
+								<li class="pgNext ">下一页</li>
+								<li class="pgNext ">末页</li>
+								<li class="">共95页</li>
+								<li>当前 <input type="text" placeholder="1" /> 页</li>
+								<li><button>确定</button></li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+				
+			</div>
+		</div>
+		<!-- =========================尾部============================= -->
+		<footer>
+			<div class="jk-info">
+				<div class="jk-information">
+					<div class="jk-logo">
+						<img src="images/jk-logo-footer.png">
+						<p>极客学院，编程是一种信仰！</p>
+					</div>
+					<dl>
+						<dt>职业学院</dt>
+						<dd>
+							<a href="//www.jikexueyuan.com/zhiye/web" target="_blank">Web前端工程师</a>
+						</dd>
+						<dd><a href="//www.jikexueyuan.com/zhiye/python" target="_blank">Python Web工程师</a>
+						</dd>
+						<dd>
+							<a href="//www.jikexueyuan.com/zhiye/go" target="_blank">Go语言工程师</a>
+						</dd>
+						<dd>
+							<a href="//www.jikexueyuan.com/zhiye/ios" target="_blank">iOS工程师</a>
+						</dd>
+						<dd>
+							<a href="//www.jikexueyuan.com/zhiye/wechatapp" target="_blank">微信小程序工程师</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>会员课程</dt>
+						<dd>
+							<a href="//www.jikexueyuan.com/zhiye/web" target="_blank">课程库</a>
+						</dd>
+						<dd><a href="//www.jikexueyuan.com/zhiye/python" target="_blank">知识体系图</a>
+						</dd>
+						<dd>
+							<a href="//www.jikexueyuan.com/zhiye/go" target="_blank">职业路径图</a>
+						</dd>
+						<dd>
+							<a href="//www.jikexueyuan.com/zhiye/ios" target="_blank">系列课程</a>
+						</dd>
+						<dd>
+							<a href="//www.jikexueyuan.com/zhiye/wechatapp" target="_blank">课程标签</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>极客社区</dt>
+						<dd>
+							<a href="//www.jikexueyuan.com/zhiye/web" target="_blank">技术问答</a>
+						</dd>
+						<dd><a href="//www.jikexueyuan.com/zhiye/python" target="_blank">Wiki</a>
+						</dd>
+						<dd>
+							<a href="//www.jikexueyuan.com/zhiye/go" target="_blank">资源下载</a>
+						</dd>
+						<dd>
+							<a href="//www.jikexueyuan.com/zhiye/ios" target="_blank">社群</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>其它</dt>
+						<dd>
+							<a href="//www.jikexueyuan.com/zhiye/web" target="_blank">关于我们</a>
+						</dd>
+						<dd><a href="//www.jikexueyuan.com/zhiye/python" target="_blank">加入我们</a>
+						</dd>
+						<dd>
+							<a href="//www.jikexueyuan.com/zhiye/go" target="_blank">讲师合作</a>
+						</dd>
+						<dd>
+							<a href="//www.jikexueyuan.com/zhiye/ios" target="_blank">联系我们</a>
+						</dd>
+						<dd>
+							<a href="//www.jikexueyuan.com/zhiye/wechatapp" target="_blank">友情链接</a>
+						</dd>
+					</dl>
+					<div class="services">
+						<p class="hot-tel">服务热线：400-678-8266</p>
+						<div class="down-con down-ios">
+							<img src="images/app.png" class="code" alt="下载二维码">iPhone
+						</div>
+						<div class="down-con down-android">
+							<img src="images/app.png" class="code" alt="下载二维码">Android
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="jk-copyright">
+				Copyright © 2013-2017 
+				<strong>jikexueyuan.com</strong>
+				 All Rights Reserved. 京ICP备11018032号-8 京公网安备11010802020210
+				 <a href="//qun.jikexueyuan.com/jikexueyuan/topic/430" target="_blank" class="down-wechat"></a>
+				 <a href="//weibo.com/jikexueyuan " target="_blank" class="down-sina"></a>
+			</div>
+		</footer>
+		<!-- ==========================回到顶部======================= -->
+		<div class="backtop">
+			<span class="top" id="top"></span>
+			<span class="erwma">
+				<img src="images/erwma.png">
+			</span>
+
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="jkxy.js"></script>
+</html>
+
+
+<!-- <div class="sidebarCategory">
+	<ul>
+		<li>我是1
+			<div class="menu">
+				<ul class="class1">
+					<li>1213</li>
+				</ul>
+			</div>	
+		</li>
+		<li>我是2
+			<div class="menu">
+				<ul class="class2">
+					<li>3212</li>
+				</ul>
+			</div>	
+		</li>
+	</ul>
+</div> -->

@@ -1,0 +1,51 @@
+	/*设定起始位置*/
+	* {
+        padding: 0;
+        margin: 0;
+    }
+    /*标题设置*/
+	caption {
+	    font-size: 20px;
+	    font-weight: bold;
+	    color: #FF0000;
+	}
+	/*表格设置*/
+	table {
+	    border-collapse: collapse;/*合并边框线*/
+	    border: 1px #525152 solid;/*边框线大小、颜色、样式选择*/
+	    width: 50%;
+	    margin:0 auto;/*随界面大小变化*/
+	    margin-top: 150px;
+	    background-color: #FFFF00;
+	}	
+	th,td {
+	    border: 1px #525152 solid;
+	    text-align: center;
+	    line-height: 30px;
+	}
+
+
+	/*表格斜线、字体设置*/
+	.b-week {
+	    font-style: normal;
+	    position: absolute;
+	    top: -80px;
+	    left: -40px;
+	    width: 35px;
+	}
+	
+	.b-sequence {
+	    font-style: normal;
+	    position: absolute;
+	    top: -45px;
+	    left: -85px;
+	    width: 55px;
+	}
+	
+	.line-slant {
+	    border-top: 90px solid #D1D3D6;/*线框上下拉大小（左右默认）、样式、填充颜色*/
+	    width: 0px;
+	    height: 0px;
+	    border-left: 80px solid #BDBABD;/*线框左右拉大小（上下默认）、样式、填充颜色*/
+	    position: relative;
+	}

@@ -1,0 +1,102 @@
+/*设置背景颜色*/
+body{
+	background-color: #ddd;
+    padding: 0;
+    /*display:-webkit-box;*/
+    /*-webkit-box-pack:center;*/     /*水平居中*/ 
+    /*-webkit-box-align:center; */   /*垂直居中*/
+
+}
+/*正文大小及居中设置*/
+/*疑惑 1：当position设为absolute时，已经脱离文档流了，然后通过left:50%
+    和top:50%进行移位时，不应该是以浏览器页面的左上角位置开始进行偏移，
+    最终实现居中效果的吗？但是结果却不是如此，还要自己通过margin进行调节，
+    这是我在哪里理解出错了？*/
+  /*疑惑 2：当我在body类中进行如下这样的设置，以期达到整个显示界面的居中，结
+        果也并不能如愿，望解答
+    .body{display:-webkit-box;
+    -webkit-box-pack:center;     
+    -webkit-box-align:center;}  */ 
+
+.center{
+    left: 50%;
+    top:50%;
+    height: 320px;
+    width: 320px;
+    margin-left: -160px;
+    margin-top: -160px;
+    position: absolute;
+}
+
+
+
+/*顶部元素，居中*/
+.top {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    margin:0 auto;
+    position: relative;
+    box-shadow: 0 0 10px #000 ;
+    border-style: groove;
+    /*向下渐变的倒像*/
+    -webkit-box-reflect: below 0 -webkit-linear-gradient(top,rgba(250,250,250,0),rgba(250,250,250,.0) 30%,rgba(250,250,250,0.3));
+    box-reflect: below 0 -webkit-linear-gradient(top,rgba(250,250,250,0),rgba(250,250,250,.0) 30%,rgba(250,250,250,0.3));
+
+}
+
+.middle1 {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    display: inline-block;
+    position: relative;
+    box-shadow: 0 0 10px #000 ;
+    border-style: groove;
+    /*向下渐变的倒像*/
+    -webkit-box-reflect: below 0 -webkit-linear-gradient(top,rgba(250,250,250,0),rgba(250,250,250,.0) 30%,rgba(250,250,250,0.3));
+    box-reflect: below 0 -webkit-linear-gradient(top,rgba(250,250,250,0),rgba(250,250,250,.0) 30%,rgba(250,250,250,0.3));
+}
+
+.middle2 {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    background-image: url(images/panda.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 10px #000 ;
+    -webkit-box-reflect: below 0 -webkit-linear-gradient(top,rgba(250,250,250,0),rgba(250,250,250,.0) 30%,rgba(250,250,250,0.3));
+    box-reflect: below 0 -webkit-linear-gradient(top,rgba(250,250,250,0),rgba(250,250,250,.0) 30%,rgba(250,250,250,0.3)); 
+
+}
+
+.middle3 {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    left: 103px;
+    position: relative;
+    box-shadow: 0 0 10px #345 ;
+    border-style: groove;
+    -webkit-box-reflect: below 0 -webkit-linear-gradient(top,rgba(250,250,250,0),rgba(250,250,250,.0) 30%,rgba(250,250,250,0.3));
+    box-reflect: below 0 -webkit-linear-gradient(top,rgba(250,250,250,0),rgba(250,250,250,.0) 30%,rgba(250,250,250,0.3));
+}
+
+.bottom {
+    height: 100px;
+    width: 100px;
+    background-color: orange;
+    margin:0 auto;
+    /*margin-left: 112px;*/
+    position: relative;
+    /*top:100px;*/
+    box-shadow: 0 0 10px #333 ;
+    /*margin-top: 104px;*/
+    border-style: groove;
+    /*float: right;*/
+    -webkit-box-reflect: below 0 -webkit-linear-gradient(top,rgba(250,250,250,0),rgba(250,250,250,.0) 30%,rgba(250,250,250,0.3));
+    box-reflect: below 0 -webkit-linear-gradient(top,rgba(250,250,250,0),rgba(250,250,250,.0) 30%,rgba(250,250,250,0.3));
+}

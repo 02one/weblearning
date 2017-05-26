@@ -1,0 +1,24 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+.container{
+	padding:0;
+	margin: 0;
+	position: relative;
+}
+.box{
+
+	position: relative;
+    float: left;
+}
+.image{
+	padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px #ccc;
+    border-radius: 5px;
+}
+.image img{
+	width: 218px;
+	position: relative;
+}

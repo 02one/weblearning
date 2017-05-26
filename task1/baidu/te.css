@@ -1,0 +1,279 @@
+/*=================初始化设置================*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,body{  
+    height: 100%;
+}
+
+/*总的容器*/
+.wrap{
+    min-height: 600px;
+    min-width: 710px;
+    height: 100%;
+    position: relative;
+
+}
+/*=================top部分================*/
+/*设置字体大小及位置*/
+/*ul a{
+    float: left;
+    color: #333;
+    font-weight: 700;
+    line-height: 24px;
+    margin-left: 20px;
+    margin-top: 19px;
+    font-size: 13px;
+    text-decoration: underline;
+
+}*/
+.mnav{
+    float: left;
+    color: #333;
+    font-weight: 700;
+    line-height: 24px;
+    margin-left: 20px;
+    margin-top: 19px;
+    font-size: 13px;
+    text-decoration: underline;
+}
+.c-font{
+    float: left;
+    color: #333;
+    font-size: 13px;
+    line-height: 24px;
+    margin-left: 20px;
+    margin-top: 19px;
+    text-decoration: underline;
+}
+/*#topdiv {
+    width: 87%;
+    height: 60px;
+    margin: 0 auto;
+    margin-top: 2px;
+}*/
+#topdiv{
+    height: 10%;
+}
+/*"更多产品"选项容器*/
+.more-item{
+    height: 97%;
+    float: right;
+    position: absolute;
+    left: 95%;
+    padding-top: 10px;
+
+
+}
+/*鼠标经过触发器*/
+.more-item:hover .more-menu{
+    display: block;
+}
+/*"更多产品"的下拉菜单*/
+.more-menu{
+    background-color: #d1d1d1;
+    width: 80px;
+    display: none;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    margin-top: -55px;
+}
+.more-menu li{
+    list-style: none;
+}
+/*a:link     :链接未点击时
+  a:hover    :鼠标放在链接上未点击
+  a:visited  :链接已经点击过的
+  a:active   :链接被点击的时候*/
+/*字体颜色变化选择器*/
+.mnav:link {
+    color: black;
+}
+.mnav:hover {
+    color: blue;
+}
+.setting:link{
+    color: black;
+}
+.setting:hover {
+    color: blue;
+}
+.c-font:link{
+    color: black;
+}
+.c-font:hover{
+    color: blue;
+}
+/*“设置”选项设置*/
+/*消除列表小点标记*/
+.setting-item{
+    list-style: none;
+    margin-right: 24px;
+}
+.setting-menu{
+    list-style: none;
+    margin-right: 70px;
+}
+
+.setting-item li{
+    float: right;
+    text-align: center;
+    position: relative;
+}
+
+.setting-menu {
+    position: absolute;
+    display: none;
+    /*height: 40px;*/
+    width: 75px;
+/*    text-align: left;*/
+    line-height: 20px;
+    margin-top: 43px;
+    text-align: center;
+    background-color: #FFFFFF;
+    /*overflow: hidden;*/
+    box-shadow: 0px 0px 10px #345 ;
+    -moz-box-shadow: 0px 0px 10px #345 ; /* Firefox  */
+    -webkit-box-shadow: 0px 0px 10px #345 ; /* Safari and Chrome */ 
+    box-shadow: 0px 0px 10px #345 ; /* Opera 10.5+, future browsers and IE6+ using IE-CSS3 */ 
+    behavior: url(ie-css3.htc); 
+}
+.setting:hover .setting-menu {
+    display: block;
+}
+.item{
+    text-decoration: none;
+}
+.setting-item li:hover .dropdown-menu {
+    display: block;
+}
+/*ul li ul li {
+    background-color: #eee;
+}
+
+ul li ul li a:hover {
+    background-color: #06f
+}*/
+/*==========================================疑惑：=====================================
+=======================================为什么这里不能实现显示？=======================*/
+.setting-menu:hover .setting-menu{
+    display: block;
+}
+
+
+
+/*=================middle部分================*/
+/*搜索框容器*/
+.div-input{
+    border-style: solid; 
+    display: inline-block;
+    border-color: gray;
+    border-width: 1px;
+    float: left;
+    outline: 0;
+}
+
+#middlediv {
+    /*padding-top: 118px;*/
+    text-align: center;
+    height: 70%;
+    width: 97%;
+}
+/*<input>设置*/
+.s_ipt {
+    width: 520px;
+    height: 27px;
+    font: 16px/18px arial;
+    margin: 6px 0 0 7px;
+    padding: 0;
+    outline: 0;
+    -webkit-appearance:none;
+    background: transparent;
+    border-width: 0;
+}
+/*按钮容器*/
+.btn {
+    background-image: none;
+    width: 100px;
+    height: 36px;
+    color: #fff;
+    font-size: 15px;
+    background: #3385ff;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #2d78f4;
+    display: inline-block;
+    float: left;
+    outline: 0;
+    border-width: 0;
+}
+/*按钮颜色变化*/
+.btn:hover {
+    background: #317ef3;
+    border-bottom: 1px solid #2868c8;
+    box-shadow: 1px 1px 1px #ccc;
+}
+/*搜索框及按钮总容器*/
+.div-input-btn{
+    width: 662px;
+    margin: 15px auto;
+}
+img{
+    border-style: none;/*针对IE8等*/
+}
+
+/*=================bottom部分================*/
+
+/*二维码大小、位置*/
+.tdcodediv {
+    width: 100%;
+/*    height: 11%;*/
+    text-align: center;
+    font-size: 13px;
+/*    padding-top: 160px;
+    margin-top: 170px;*/
+}
+/*bottom盒子大小设置*/
+.bottomdiv {
+    width: 100%;
+/*    height: 13%;*/
+    float: left;
+}
+
+/*底端字体大小、居中*/
+
+#bottomdiv {
+    text-align: center;
+    font-size: 12px;
+    color: #999;
+    height: 20%;
+    width: 97%;
+    margin-top: -10%;
+}
+#bottomdiv a{
+    color: #999;
+}
+
+#topdiv .dropdown-menu{
+    max-width: 40px;
+    min-height: 400px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.class-img{
+    left: 12px;
+    position: relative;
+    top: 12px;
+}
+
+@media handheld and (min-width: 300px) and (max-width: 500px){
+    .middlediv{
+        padding-top: 140px;
+    }
+    .bottomdiv{
+        padding-top: 500px;
+    }
+}

@@ -1,0 +1,324 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-1hd {
+  background-image: url(../sprite.png);
+  background-position: -1098px -232px;
+  width: 16px;
+  height: 16px;
+}
+.icon-4399-web {
+  background-image: url(../sprite.png);
+  background-position: -930px -232px;
+  width: 16px;
+  height: 16px;
+}
+.icon-bd-logo-phone {
+  background-image: url(../sprite.png);
+  background-position: -603px -185px;
+  width: 185px;
+  height: 70px;
+}
+.icon-bd-web {
+  background-image: url(../sprite.png);
+  background-position: -1077px -232px;
+  width: 16px;
+  height: 16px;
+}
+.icon-bd_logo {
+  background-image: url(../sprite.png);
+  background-position: 0px -405px;
+  width: 540px;
+  height: 258px;
+}
+.icon-camera {
+  background-image: url(../sprite.png);
+  background-position: -1198px -185px;
+  width: 27px;
+  height: 25px;
+}
+.icon-card_setts {
+  background-image: url(../sprite.png);
+  background-position: -405px -185px;
+  width: 193px;
+  height: 94px;
+}
+.icon-cross {
+  background-image: url(../sprite.png);
+  background-position: -793px -232px;
+  width: 22px;
+  height: 22px;
+}
+.icon-ddw {
+  background-image: url(../sprite.png);
+  background-position: -951px -232px;
+  width: 16px;
+  height: 16px;
+}
+.icon-fan {
+  background-image: url(../sprite.png);
+  background-position: -820px -232px;
+  width: 21px;
+  height: 21px;
+}
+.icon-fh-web {
+  background-image: url(../sprite.png);
+  background-position: -846px -232px;
+  width: 16px;
+  height: 16px;
+}
+.icon-focus-icon {
+  background-image: url(../sprite.png);
+  background-position: -824px -284px;
+  width: 30px;
+  height: 30px;
+}
+.icon-food-icon {
+  background-image: url(../sprite.png);
+  background-position: -789px -284px;
+  width: 30px;
+  height: 30px;
+}
+.icon-gg {
+  background-image: url(../sprite.png);
+  background-position: -972px -232px;
+  width: 16px;
+  height: 16px;
+}
+.icon-hao123 {
+  background-image: url(../sprite.png);
+  background-position: -888px -232px;
+  width: 16px;
+  height: 16px;
+}
+.icon-jd-web {
+  background-image: url(../sprite.png);
+  background-position: -909px -232px;
+  width: 16px;
+  height: 16px;
+}
+.icon-know {
+  background-image: url(../sprite.png);
+  background-position: -566px -349px;
+  width: 48px;
+  height: 48px;
+}
+.icon-library {
+  background-image: url(../sprite.png);
+  background-position: -460px -349px;
+  width: 48px;
+  height: 48px;
+}
+.icon-map-icon {
+  background-image: url(../sprite.png);
+  background-position: -929px -284px;
+  width: 30px;
+  height: 30px;
+}
+.icon-more {
+  background-image: url(../sprite.png);
+  background-position: -1119px -185px;
+  width: 74px;
+  height: 30px;
+}
+.icon-music {
+  background-image: url(../sprite.png);
+  background-position: -405px -349px;
+  width: 50px;
+  height: 48px;
+}
+.icon-news-icon {
+  background-image: url(../sprite.png);
+  background-position: -894px -284px;
+  width: 30px;
+  height: 30px;
+}
+.icon-nm {
+  background-image: url(../sprite.png);
+  background-position: -1035px -232px;
+  width: 16px;
+  height: 16px;
+}
+.icon-novel-icon {
+  background-image: url(../sprite.png);
+  background-position: -754px -284px;
+  width: 30px;
+  height: 30px;
+}
+.icon-ns_diff_color_v2 {
+  background-image: url(../sprite.png);
+  background-position: 0px -668px;
+  width: 66px;
+  height: 1716px;
+}
+.icon-number-icon {
+  background-image: url(../sprite.png);
+  background-position: -590px -284px;
+  width: 40px;
+  height: 40px;
+}
+.icon-picture {
+  background-image: url(../sprite.png);
+  background-position: -619px -349px;
+  width: 46px;
+  height: 48px;
+}
+.icon-qjw {
+  background-image: url(../sprite.png);
+  background-position: -993px -232px;
+  width: 16px;
+  height: 16px;
+}
+.icon-qq-web {
+  background-image: url(../sprite.png);
+  background-position: -1014px -232px;
+  width: 16px;
+  height: 16px;
+}
+.icon-rank {
+  background-image: url(../sprite.png);
+  background-position: -513px -349px;
+  width: 48px;
+  height: 48px;
+}
+.icon-sina-web {
+  background-image: url(../sprite.png);
+  background-position: -1056px -232px;
+  width: 16px;
+  height: 16px;
+}
+.icon-skin_icon {
+  background-image: url(../sprite.png);
+  background-position: 0px 0px;
+  width: 400px;
+  height: 400px;
+}
+.icon-skin_preview {
+  background-image: url(../sprite.png);
+  background-position: -405px 0px;
+  width: 820px;
+  height: 180px;
+}
+.icon-sn {
+  background-image: url(../sprite.png);
+  background-position: -867px -232px;
+  width: 16px;
+  height: 16px;
+}
+.icon-star {
+  background-image: url(../sprite.png);
+  background-position: -997px -284px;
+  width: 13px;
+  height: 26px;
+}
+.icon-tb-web {
+  background-image: url(../sprite.png);
+  background-position: -603px -260px;
+  width: 16px;
+  height: 16px;
+}
+.icon-tdcode {
+  background-image: url(../sprite.png);
+  background-position: -405px -284px;
+  width: 60px;
+  height: 60px;
+}
+.icon-top-icon {
+  background-image: url(../sprite.png);
+  background-position: -966px -185px;
+  width: 148px;
+  height: 38px;
+}
+.icon-user-icon {
+  background-image: url(../sprite.png);
+  background-position: -717px -284px;
+  width: 32px;
+  height: 32px;
+}
+.icon-vicon {
+  background-image: url(../sprite.png);
+  background-position: -470px -284px;
+  width: 70px;
+  height: 40px;
+}
+.icon-video-icon {
+  background-image: url(../sprite.png);
+  background-position: -859px -284px;
+  width: 30px;
+  height: 30px;
+}
+.icon-video_corner {
+  background-image: url(../sprite.png);
+  background-position: -793px -185px;
+  width: 168px;
+  height: 42px;
+}
+.icon-weather-icon {
+  background-image: url(../sprite.png);
+  background-position: -964px -284px;
+  width: 28px;
+  height: 28px;
+}
+.icon-weather1-icon {
+  background-image: url(../sprite.png);
+  background-position: -545px -284px;
+  width: 40px;
+  height: 40px;
+}
+.icon-where-icon {
+  background-image: url(../sprite.png);
+  background-position: -679px -284px;
+  width: 33px;
+  height: 33px;
+}
+.icon-wph {
+  background-image: url(../sprite.png);
+  background-position: -1119px -232px;
+  width: 16px;
+  height: 16px;
+}
+.icon-wy {
+  background-image: url(../sprite.png);
+  background-position: -1140px -232px;
+  width: 16px;
+  height: 16px;
+}
+.icon-yd {
+  background-image: url(../sprite.png);
+  background-position: -1161px -232px;
+  width: 16px;
+  height: 16px;
+}
+.icon-yk-web {
+  background-image: url(../sprite.png);
+  background-position: -1182px -232px;
+  width: 16px;
+  height: 16px;
+}
+.icon-ymx-web {
+  background-image: url(../sprite.png);
+  background-position: -1203px -232px;
+  width: 16px;
+  height: 16px;
+}
+.icon-yy-icon {
+  background-image: url(../sprite.png);
+  background-position: -635px -284px;
+  width: 39px;
+  height: 39px;
+}

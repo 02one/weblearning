@@ -1,0 +1,74 @@
+/*样式设计*/
+.container{
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+.content{
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 380px;
+	height: 500px;
+	margin:30px auto;
+	background-repeat: no-repeat;
+	background-image: url(images/bg.jpg);
+	box-shadow: 0px 0px 20px;
+	border: 1px #000 solid;
+}
+.content .input-window input{
+	width: 350px;
+	height: 80px;
+	margin-left: 15px;
+	margin-top: 5px;
+	font-size: 40px;
+	box-shadow: 0px 0px 10px;
+}
+.content .gap-window{
+	height: 25px;
+	width: 330px;
+	margin-left: 25px;
+	background: #4D4D4D;
+	box-shadow: 0px 0px 10px;
+}
+.content .work-window{
+	height: 360px;
+	width: 350px;
+	margin:15px 15px;
+}
+.content .work-window button{
+	width: 80px;
+	height: 50px;
+	float: left;
+	background: white;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	background: #2B2B2B;
+	color: #fff;
+	font-size: 18px;
+}
+.content .work-window button:nth-child(4),
+.content .work-window button:nth-child(8),
+.content .work-window button:nth-child(12),
+.content .work-window button:nth-child(16),
+.content .work-window button:nth-child(20),
+.content .work-window button:nth-child(24){
+	margin-right: 0;
+	background: #5C5C5C;
+}
+.content .work-window button:nth-child(1),
+.content .work-window button:nth-child(2),
+.content .work-window button:nth-child(3),
+.content .work-window button:nth-child(4),
+.content .work-window button:nth-child(5),
+.content .work-window button:nth-child(6),
+.content .work-window button:nth-child(7){
+	background: #0D0D0D;
+}
+.content .work-window button:nth-child(24){
+	background: #CD950C;
+}
+.tips {
+	margin-top: 50px;
+}

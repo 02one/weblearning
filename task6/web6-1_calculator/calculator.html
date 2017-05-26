@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>欢迎使用计算器</title>
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+	<link rel="stylesheet" type="text/css" href="calculator.css">
+</head>
+<body>
+	<div class="container">
+		<div class="content">
+			<div class="input-window">
+				<input type="text" dir="rtl" disabled="disable" id="show-window" value="0" />		
+			</div>
+			<div class="gap-window"></div>
+			<div class="work-window">
+				<button class="btn" onclick="storage()">存储</button>
+				<button class="btn" onclick="gainData()">取存</button>
+				<button class="btn" onclick="backSpace()">退格</button>
+				<button class="btn" onclick="clearWindow()">清屏</button>
+				<button class="btn" onclick="accumulation()">累存</button>
+				<button class="btn" onclick="flock()">积存</button>
+				<button class="btn" onclick="saveClear()">清存</button>
+				<button class="btn" onclick="divisionClick()" value="/">÷</button>
+				<button class="btn" onclick="num7Click()" value="7">7</button>
+				<button class="btn" onclick="num8Click()" value="8">8</button>
+				<button class="btn" onclick="num9Click()" value="9">9</button>
+				<button class="btn" onclick="multiplyClick()" value="*">×</button>
+				<button class="btn" onclick="num4Click()" value="4">4</button>
+				<button class="btn" onclick="num5Click()" value="5">5</button>
+				<button class="btn" onclick="num6Click()" value="6">6</button>
+				<button class="btn" onclick="minusClick()" value="-" >－</button>
+				<button class="btn" onclick="num1Click()"  value="1">1</button>
+				<button class="btn" onclick="num2Click()"  value="2">2</button>
+				<button class="btn" onclick="num3Click()" value="3">3</button>
+				<button class="btn" onclick="plusClick()" value="+">＋</button>
+				<button class="btn" onclick="num0Click()" value="0" >0</button>
+				<button class="btn" onclick="dotClick()" value=".">.</button>
+				<button class="btn" onclick="signChange()">+/-</button>
+				<button class="btn" onclick="amount()">=</button>
+			</div>
+			<div class="tips">
+			<p>储存：将当前值存到暂存器</p>
+			<p>取存：将计算器暂存器的值取出</p>
+			<p>累存：把计算器当前值与存储器的暂存值相加，再存入暂存器 </p>
+			<p>积存：把计算器当前值与存储器的暂存值相乘，再存入暂存器 </p>
+			<p>清存：计算器在线计算的存储器暂存值清零 </p>
+			</div>
+		</div>
+	</div>
+</body>
+
+<script type="text/javascript" src="calculator.js"></script>
+</html>
